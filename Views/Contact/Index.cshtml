@@ -1,0 +1,93 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Contact Us – Drip Smart USA";
+}
+
+<section class="page-hero" style="background: linear-gradient(135deg, #0e1438 0%, #181F4E 100%);">
+    <div class="container page-hero-inner">
+        <div class="page-hero-text">
+            <nav class="breadcrumb"><a href="/">Home</a> / <span>Contact Us</span></nav>
+            <h1>We're Here to<br/>Point You in the Right Direction</h1>
+            <p>Questions about our products, technology, or how to get a system installed? We'll get you the right answer — whether that's product specs, a literature request, or connecting you with the nearest certified dealer.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-layout">
+            <!-- Form -->
+            <div class="contact-form-wrap">
+                <h2>Send Us a Message</h2>
+                <p style="margin-bottom:28px;">Product questions, technical specs, dealer inquiries, media requests — we read every submission and respond within one business day.</p>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="John" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Smith" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@yourfarm.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry">What's this about? *</label>
+                        <select id="inquiry" name="inquiry" required>
+                            <option value="">Select a topic...</option>
+                            <option value="product">Product Information / Specs</option>
+                            <option value="dealer">Find or Become a Dealer</option>
+                            <option value="dripsphere">DripSphere OS™ Technical Support</option>
+                            <option value="warranty">Warranty or Product Issue</option>
+                            <option value="media">Media / Press Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="industry">Industry / Application</label>
+                        <select id="industry" name="industry">
+                            <option value="">Select your industry...</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="landscape">Landscape &amp; Turf</option>
+                            <option value="greenhouse">Greenhouse &amp; Nursery</option>
+                            <option value="wastewater">Wastewater</option>
+                            <option value="mining">Mining</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="What would you like to know? The more detail you share, the more useful our response will be."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full" style="font-size:1rem; padding:16px;">Send Message →</button>
+                </form>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="contact-sidebar">
+                <div class="contact-info-card">
+                    <h3>Looking to Get a System Installed?</h3>
+                    <p style="font-size:0.88rem; margin:10px 0 16px;">Our certified dealer network is the fastest path to a system designed and installed for your specific field. 1,200+ dealers across all 50 states, factory-trained and locally knowledgeable.</p>
+                    <a href="/find-a-dealer" class="btn-primary" style="width:100%; justify-content:center; display:block; text-align:center;">Find Your Nearest Dealer</a>
+                </div>
+                <div class="contact-info-card" style="margin-top:20px;">
+                    <h3>How We Can Help</h3>
+                    <div class="contact-steps">
+                        <div class="contact-step"><div class="contact-step-num">1</div><div><strong>Product questions</strong><p>Specs, datasheets, and application guidance for any DripSmart product line.</p></div></div>
+                        <div class="contact-step"><div class="contact-step-num">2</div><div><strong>Dealer connection</strong><p>We'll point you to the right certified dealer for your region and application.</p></div></div>
+                        <div class="contact-step"><div class="contact-step-num">3</div><div><strong>DripSphere OS™ support</strong><p>Technical help with platform setup, integrations, and troubleshooting.</p></div></div>
+                        <div class="contact-step"><div class="contact-step-num">4</div><div><strong>Become a dealer</strong><p>Interested in carrying DripSmart? Start the conversation here.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

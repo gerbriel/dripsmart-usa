@@ -1,0 +1,214 @@
+@{
+    ViewBag.Title = "Find a Dealer – Drip Smart USA";
+    ViewBag.MetaDescription = "Locate your nearest DripSmart certified irrigation dealer. Get local product expertise, system design, and installation support wherever you farm or grow.";
+}
+
+<!-- Hero -->
+<section class="page-hero bg-midnight section">
+    <div class="container">
+        <div class="page-hero-inner">
+            <div class="breadcrumb"><a href="/">Home</a> › <span>Find a Dealer</span></div>
+            <div class="page-hero-text">
+                <span class="section-eyebrow">Dealer Network</span>
+                <h1>Find a DripSmart<br>Dealer Near You.</h1>
+                <p>Over 1,200 certified dealers across the United States carry DripSmart products and provide local system design, installation, and service. Get the hardware you need, backed by someone who knows your region.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Search + Results -->
+<section class="section bg-cream">
+    <div class="container">
+        <div class="two-col-layout" style="align-items: flex-start;">
+            <!-- Search Panel -->
+            <div>
+                <div class="dealer-form">
+                    <h3>Search Dealers</h3>
+                    <div class="form-group">
+                        <label for="search-zip">ZIP Code or City</label>
+                        <input type="text" id="search-zip" placeholder="e.g. Fresno, CA or 93710" />
+                    </div>
+                    <div class="form-group">
+                        <label for="search-industry">Industry / Application</label>
+                        <select id="search-industry">
+                            <option value="">All Industries</option>
+                            <option>Agriculture</option>
+                            <option>Landscape &amp; Turf</option>
+                            <option>Greenhouse &amp; Nursery</option>
+                            <option>Golf &amp; Sports Turf</option>
+                            <option>Wastewater</option>
+                            <option>Mining</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="search-radius">Search Radius</label>
+                        <select id="search-radius">
+                            <option>25 miles</option>
+                            <option selected>50 miles</option>
+                            <option>100 miles</option>
+                            <option>250 miles</option>
+                            <option>Nationwide</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary btn-full">Search Dealers</button>
+                </div>
+
+                <!-- Become a Dealer -->
+                <div class="info-card" style="margin-top: 20px; background: var(--midnight); border-color: transparent;">
+                    <h3 style="color: var(--white);">Become a DripSmart Dealer</h3>
+                    <p style="color: rgba(255,255,255,0.6); margin-bottom: 16px;">Join our network of 1,200+ dealers. Get exclusive pricing, training, co-op marketing funds, and technical support.</p>
+                    <a href="/contact" class="btn-outline-white">Apply to Join</a>
+                </div>
+            </div>
+
+            <!-- Results list -->
+            <div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Showing featured dealers — search above for dealers near you</p>
+                <div class="dealer-results">
+                    <div class="dealer-item">
+                        <div>
+                            <div class="dealer-name">Valley Irrigation Supply Co.</div>
+                            <div class="dealer-location">📍 Fresno, CA &nbsp;|&nbsp; 12 miles</div>
+                            <div class="dealer-industries">
+                                <span class="dealer-tag">Agriculture</span>
+                                <span class="dealer-tag">Landscape</span>
+                                <span class="dealer-tag">Greenhouse</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0;">
+                            <a href="tel:+15595550100" class="btn-primary-sm">Call</a>
+                            <a href="/contact" class="btn-outline-sm" style="border-color: var(--border); color: var(--text); font-size: 0.82rem;">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="dealer-item">
+                        <div>
+                            <div class="dealer-name">Western Ag Supply &amp; Design</div>
+                            <div class="dealer-location">📍 Visalia, CA &nbsp;|&nbsp; 34 miles</div>
+                            <div class="dealer-industries">
+                                <span class="dealer-tag">Agriculture</span>
+                                <span class="dealer-tag">Wastewater</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0;">
+                            <a href="tel:+15595550200" class="btn-primary-sm">Call</a>
+                            <a href="/contact" class="btn-outline-sm" style="border-color: var(--border); color: var(--text); font-size: 0.82rem;">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="dealer-item">
+                        <div>
+                            <div class="dealer-name">Pacific Drip Systems Inc.</div>
+                            <div class="dealer-location">📍 Bakersfield, CA &nbsp;|&nbsp; 68 miles</div>
+                            <div class="dealer-industries">
+                                <span class="dealer-tag">Agriculture</span>
+                                <span class="dealer-tag">Landscape</span>
+                                <span class="dealer-tag">Golf</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0;">
+                            <a href="tel:+16615550300" class="btn-primary-sm">Call</a>
+                            <a href="/contact" class="btn-outline-sm" style="border-color: var(--border); color: var(--text); font-size: 0.82rem;">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="dealer-item">
+                        <div>
+                            <div class="dealer-name">Southwest Irrigation Group</div>
+                            <div class="dealer-location">📍 Phoenix, AZ &nbsp;|&nbsp; Regional</div>
+                            <div class="dealer-industries">
+                                <span class="dealer-tag">Agriculture</span>
+                                <span class="dealer-tag">Mining</span>
+                                <span class="dealer-tag">Landscape</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0;">
+                            <a href="tel:+16025550400" class="btn-primary-sm">Call</a>
+                            <a href="/contact" class="btn-outline-sm" style="border-color: var(--border); color: var(--text); font-size: 0.82rem;">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="dealer-item">
+                        <div>
+                            <div class="dealer-name">Great Plains Drip &amp; Sprinkler</div>
+                            <div class="dealer-location">📍 Lubbock, TX &nbsp;|&nbsp; Regional</div>
+                            <div class="dealer-industries">
+                                <span class="dealer-tag">Agriculture</span>
+                                <span class="dealer-tag">Greenhouse</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0;">
+                            <a href="tel:+18065550500" class="btn-primary-sm">Call</a>
+                            <a href="/contact" class="btn-outline-sm" style="border-color: var(--border); color: var(--text); font-size: 0.82rem;">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="dealer-item">
+                        <div>
+                            <div class="dealer-name">Midwest Precision Ag Supply</div>
+                            <div class="dealer-location">📍 Des Moines, IA &nbsp;|&nbsp; Regional</div>
+                            <div class="dealer-industries">
+                                <span class="dealer-tag">Agriculture</span>
+                                <span class="dealer-tag">Wastewater</span>
+                                <span class="dealer-tag">Recycling</span>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0;">
+                            <a href="tel:+15155550600" class="btn-primary-sm">Call</a>
+                            <a href="/contact" class="btn-outline-sm" style="border-color: var(--border); color: var(--text); font-size: 0.82rem;">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certified Dealer Benefits -->
+<section class="section">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">Why Buy from a Certified Dealer</span>
+            <h2>Local Expertise. Factory-Backed Products.</h2>
+        </div>
+        <div class="three-col-grid">
+            <div class="info-card">
+                <div class="info-card-icon">🎓</div>
+                <h3>Factory-Trained Specialists</h3>
+                <p>Every DripSmart certified dealer completes our training program and earns annual recertification. They know our product line better than anyone and how it performs in your local conditions.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">📐</div>
+                <h3>Expert System Design</h3>
+                <p>Certified dealers provide hydraulic design, layout, and product specification for your project — so your system is sized and configured correctly the first time.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🚚</div>
+                <h3>Fast Local Delivery</h3>
+                <p>Stocking dealers keep the most popular DripSmart products on-hand for same or next-day delivery — so you're not waiting weeks when the season is on.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🔧</div>
+                <h3>Installation &amp; Service</h3>
+                <p>Most certified dealers offer professional installation, start-up commissioning, and ongoing maintenance — full turnkey service from a local partner who knows your farm.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🤝</div>
+                <h3>Warranty &amp; Support</h3>
+                <p>Purchases through certified dealers include full DripSmart factory warranty coverage and direct access to our technical support team when you need it.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">💳</div>
+                <h3>Financing Available</h3>
+                <p>Many dealers offer DripSmart-backed financing programs — including 0% interest for 12 months on qualifying system purchases. Ask your dealer about current programs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<div class="callout-mustard">
+    <div class="container">
+        <h2>Can't Find a Dealer Near You?</h2>
+        <p>Contact us directly — our team will connect you with the nearest certified partner or ship directly to your location.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="/contact" class="btn-primary">Contact DripSmart Directly</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@(ViewBag.Title ?? "Drip Smart USA – Precision Irrigation")</title>
+    <meta name="description" content="@(ViewBag.MetaDescription ?? "Drip Smart USA delivers precision drip irrigation systems for agriculture, landscape, greenhouse, and more. Grow more with less water.")" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>🌿 Trusted by 10,000+ farmers across North America</span>
+            <div class="top-bar-links">
+                <a href="/find-a-dealer">Find a Dealer</a>
+                <a href="/dealer-portal">Dealer Portal</a>
+                <a href="/contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#181F4E"/>
+                    <path d="M22 8C22 8 12 18 12 25C12 30.52 16.48 35 22 35C27.52 35 32 30.52 32 25C32 18 22 8 22 8Z" fill="white"/>
+                    <circle cx="22" cy="25" r="4" fill="#3B98FF"/>
+                </svg>
+                <span>Drip<strong>Smart</strong> USA</span>
+            </a>
+
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="/agriculture">Agriculture <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <h4>Solutions</h4>
+                                    <a href="/agriculture/precision-irrigation">Precision Irrigation</a>
+                                    <a href="/agriculture/drip-irrigation">Drip Irrigation</a>
+                                    <a href="/agriculture/sustainable">Sustainable Agriculture</a>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4>By Crop</h4>
+                                    <a href="/agriculture/crops/alfalfa">Alfalfa</a>
+                                    <a href="/agriculture/crops/citrus">Citrus</a>
+                                    <a href="/agriculture/crops/almonds">Almonds</a>
+                                    <a href="/agriculture/crops/corn">Corn &amp; Row Crops</a>
+                                    <a href="/agriculture/crops/cotton">Cotton</a>
+                                    <a href="/agriculture/crops">View All Crops →</a>
+                                </div>
+                                <div class="dropdown-col dropdown-featured">
+                                    <div class="dropdown-promo">
+                                        <div class="promo-badge">New</div>
+                                        <h4>DripSphere OS™</h4>
+                                        <p>Smart irrigation &amp; fertigation control, right from your phone.</p>
+                                        <a href="/digital-farming" class="btn-sm">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/industries">Industries <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <a href="/agriculture">🌾 Agriculture</a>
+                                    <a href="/landscape">🌿 Landscape &amp; Turf</a>
+                                    <a href="/greenhouse">🏡 Greenhouse &amp; Nursery</a>
+                                    <a href="/wastewater">💧 Wastewater</a>
+                                    <a href="/mining">⛏ Mining</a>
+                                    <a href="/recycling">♻️ Recycling</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/products">Products <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="dropdown-col">
+                                    <h4>Product Lines</h4>
+                                    <a href="/products/driplines">Driplines</a>
+                                    <a href="/products/sprinklers">Sprinklers</a>
+                                    <a href="/products/filters">Filters &amp; Valves</a>
+                                    <a href="/products/drippers">On-Line Drippers</a>
+                                    <a href="/products/connectors">Connectors &amp; Accessories</a>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4>Digital &amp; Smart</h4>
+                                    <a href="/digital-farming">Digital Farming</a>
+                                    <a href="/digital-farming/dripsphere-os">DripSphere OS™</a>
+                                    <a href="/digital-farming/fertigation">Precision Fertigation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="/resources">Resources</a></li>
+                    <li><a href="/growers-stories">Grower Stories</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="/find-a-dealer" class="btn-outline-sm">Find a Dealer</a>
+                <a href="/contact" class="btn-primary-sm">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-cta-band">
+            <div class="container">
+                <h2>Ready to Grow More With Less?</h2>
+                <p>Explore our product line, then connect with a certified dealer near you to get your system designed and installed.</p>
+                <div class="footer-cta-actions">
+                    <a href="/agriculture/crops" class="btn-white">Explore Products</a>
+                    <a href="/find-a-dealer" class="btn-outline-white">Find a Local Dealer</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill="#181F4E"/>
+                                <path d="M22 8C22 8 12 18 12 25C12 30.52 16.48 35 22 35C27.52 35 32 30.52 32 25C32 18 22 8 22 8Z" fill="white"/>
+                                <circle cx="22" cy="25" r="4" fill="#3B98FF"/>
+                            </svg>
+                            <span>Drip<strong>Smart</strong> USA</span>
+                        </a>
+                        <p>The leading precision drip irrigation company serving farmers, landscapers, and growers across North America.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" aria-label="YouTube">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Agriculture</h4>
+                        <ul>
+                            <li><a href="/agriculture/precision-irrigation">Precision Irrigation</a></li>
+                            <li><a href="/agriculture/drip-irrigation">Drip Irrigation</a></li>
+                            <li><a href="/agriculture/sustainable">Sustainable Farming</a></li>
+                            <li><a href="/agriculture/crops">Solutions by Crop</a></li>
+                            <li><a href="/agriculture/irrigation-academy">Irrigation Academy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Industries</h4>
+                        <ul>
+                            <li><a href="/landscape">Landscape &amp; Turf</a></li>
+                            <li><a href="/greenhouse">Greenhouse &amp; Nursery</a></li>
+                            <li><a href="/wastewater">Wastewater</a></li>
+                            <li><a href="/mining">Mining</a></li>
+                            <li><a href="/recycling">Recycling</a></li>
+                            <li><a href="/digital-farming">Digital Farming</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="/find-a-dealer">Find a Dealer</a></li>
+                            <li><a href="/resources">Resource Hub</a></li>
+                            <li><a href="/financial-solutions">Financing Options</a></li>
+                            <li><a href="/news">News &amp; Events</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/about/careers">Careers</a></li>
+                            <li><a href="/about/sustainability">Sustainability</a></li>
+                            <li><a href="/about/quality-policy">Quality Policy</a></li>
+                            <li><a href="/dealer-portal">Dealer Portal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Drip Smart USA @DateTime.Now.Year. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="/terms">Terms &amp; Conditions</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>

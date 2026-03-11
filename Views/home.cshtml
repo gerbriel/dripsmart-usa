@@ -1,0 +1,621 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Drip Smart USA – Grow More With Less";
+    ViewBag.MetaDescription = "Precision drip irrigation systems for agriculture, landscape, greenhouse and more. Save water, increase yields, and grow smarter with Drip Smart USA.";
+}
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+    <div class="hero-bg">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-bg-pattern"></div>
+    </div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <div class="hero-eyebrow">
+                <span class="badge badge-green">Trusted Since 1965</span>
+            </div>
+            <h1>Grow More.<br /><span class="text-green">Use Less Water.</span></h1>
+            <p class="hero-subtitle">Precision drip irrigation built for real farmers — delivering water and nutrients directly to the root zone so you get bigger yields, lower costs, and a sustainable future.</p>
+            <div class="hero-actions">
+                <a href="/agriculture" class="btn-primary btn-lg">Explore Our Systems</a>
+                <a href="/agriculture/precision-irrigation" class="btn-ghost btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+                    See How It Works
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50%</span>
+                    <span class="stat-label">Less Water Used</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">30%</span>
+                    <span class="stat-label">Higher Yields</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Farmers Served</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card-stack">
+                <div class="hero-card hero-card-main">
+                    <div class="card-icon">🌱</div>
+                    <div class="card-content">
+                        <div class="card-label">Live Crop Monitor</div>
+                        <div class="card-title">Alfalfa Field – Zone 3</div>
+                        <div class="card-metric">
+                            <span class="metric-good">✓ Optimal Moisture</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+                        <div class="card-footer">
+                            <span>Soil Moisture: 78%</span>
+                            <span class="badge-sm badge-green">Irrigating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-secondary">
+                    <div class="card-icon-sm">💧</div>
+                    <div>
+                        <div class="card-label-sm">Water Saved Today</div>
+                        <div class="card-val">1,240 gal</div>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-tertiary">
+                    <div class="card-icon-sm">📈</div>
+                    <div>
+                        <div class="card-label-sm">Yield Increase</div>
+                        <div class="card-val">+31% YTD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-trust">
+        <div class="container">
+            <span class="trust-label">Trusted by growers across every sector</span>
+            <div class="trust-logos">
+                <span class="trust-item">🌾 Row Crops</span>
+                <span class="trust-item">🍊 Orchards</span>
+                <span class="trust-item">🏡 Greenhouses</span>
+                <span class="trust-item">🌿 Landscape</span>
+                <span class="trust-item">♻️ Wastewater</span>
+                <span class="trust-item">⛏ Mining</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== INDUSTRIES GRID ==================== -->
+<section class="section industries-section">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">What We Serve</span>
+            <h2>Precision Irrigation for Every Industry</h2>
+            <p>Whether you're managing thousands of acres or a single greenhouse, we have a tailored solution for you.</p>
+        </div>
+        <div class="industries-grid">
+            <a href="/agriculture" class="industry-card industry-card-large">
+                <div class="industry-card-bg" style="background: linear-gradient(135deg, #1a7a4a 0%, #0d5c36 100%)"></div>
+                <div class="industry-card-icon">🌾</div>
+                <div class="industry-card-body">
+                    <h3>Agriculture</h3>
+                    <p>Maximize yields on any crop, any climate. From alfalfa to almonds, row crops to orchards.</p>
+                    <span class="industry-card-link">Explore Solutions →</span>
+                </div>
+            </a>
+            <a href="/landscape" class="industry-card">
+                <div class="industry-card-bg" style="background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%)"></div>
+                <div class="industry-card-icon">🌿</div>
+                <div class="industry-card-body">
+                    <h3>Landscape &amp; Turf</h3>
+                    <p>Water-saving solutions for lawns, parks, and commercial landscapes.</p>
+                    <span class="industry-card-link">Learn More →</span>
+                </div>
+            </a>
+            <a href="/greenhouse" class="industry-card">
+                <div class="industry-card-bg" style="background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%)"></div>
+                <div class="industry-card-icon">🏡</div>
+                <div class="industry-card-body">
+                    <h3>Greenhouse &amp; Nursery</h3>
+                    <p>Precise container and row irrigation for controlled-environment growing.</p>
+                    <span class="industry-card-link">Learn More →</span>
+                </div>
+            </a>
+            <a href="/wastewater" class="industry-card">
+                <div class="industry-card-bg" style="background: linear-gradient(135deg, #0288d1 0%, #01579b 100%)"></div>
+                <div class="industry-card-icon">💧</div>
+                <div class="industry-card-body">
+                    <h3>Wastewater</h3>
+                    <p>Self-cleaning dripline systems for safe, compliant wastewater dispersal.</p>
+                    <span class="industry-card-link">Learn More →</span>
+                </div>
+            </a>
+            <a href="/mining" class="industry-card">
+                <div class="industry-card-bg" style="background: linear-gradient(135deg, #5d4037 0%, #3e2723 100%)"></div>
+                <div class="industry-card-icon">⛏</div>
+                <div class="industry-card-body">
+                    <h3>Mining</h3>
+                    <p>Durable leach lines and drip systems built for the harshest conditions.</p>
+                    <span class="industry-card-link">Learn More →</span>
+                </div>
+            </a>
+            <a href="/recycling" class="industry-card">
+                <div class="industry-card-bg" style="background: linear-gradient(135deg, #f57c00 0%, #e65100 100%)"></div>
+                <div class="industry-card-icon">♻️</div>
+                <div class="industry-card-body">
+                    <h3>Recycling</h3>
+                    <p>Our ReGen program recycles used driplines into new ones — closing the loop.</p>
+                    <span class="industry-card-link">Learn More →</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== HOW IT WORKS ==================== -->
+<section class="section how-it-works">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">The Science Behind the System</span>
+            <h2>How Precision Drip Irrigation Works</h2>
+            <p>A smarter way to water — targeted, efficient, and engineered around your crops' actual biology.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <div class="step-icon">🔬</div>
+                <h3>Engineered for Your Crop</h3>
+                <p>Every DripSmart product is designed around real agronomic data — root architecture, ET curves, soil interaction — so the hardware does the right thing from day one.</p>
+            </div>
+            <div class="step-connector">→</div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <div class="step-icon">🔧</div>
+                <h3>Professional Installation</h3>
+                <p>A network of 1,200+ factory-trained dealers designs and installs your system — people who know your local soil, water, and crop conditions better than anyone.</p>
+            </div>
+            <div class="step-connector">→</div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <div class="step-icon">📱</div>
+                <h3>Smart Control with DripSphere OS™</h3>
+                <p>Monitor soil moisture, schedule irrigations, and run precision fertigation — all from your phone. Full visibility over every zone, every field.</p>
+            </div>
+            <div class="step-connector">→</div>
+            <div class="step-card">
+                <div class="step-number">04</div>
+                <div class="step-icon">📈</div>
+                <h3>Watch Yields Climb</h3>
+                <p>Crops get exactly what they need, when they need it. Less water waste, more nutrients retained, bigger harvests season after season.</p>
+            </div>
+        </div>
+        <div class="text-center mt-lg">
+            <a href="/agriculture/precision-irrigation" class="btn-primary">Learn About Precision Irrigation</a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== BENEFITS ==================== -->
+<section class="section benefits-section">
+    <div class="container">
+        <div class="benefits-layout">
+            <div class="benefits-text">
+                <span class="section-eyebrow">Why Drip Smart USA</span>
+                <h2>Built for the Farmer. Proven in the Field.</h2>
+                <p>Every DripSmart component is engineered around one question: what does this crop actually need? Sixty years of agronomic research goes into every emitter, every dripline, every controller we manufacture.</p>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div>
+                        <div>
+                            <strong>Up to 50% water savings</strong>
+                            <p>Compared to traditional sprinkler and flood irrigation systems.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div>
+                        <div>
+                            <strong>Improved crop quality &amp; uniformity</strong>
+                            <p>Consistent water and nutrient delivery produces more marketable fruit.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div>
+                        <div>
+                            <strong>Reduced energy &amp; fertilizer costs</strong>
+                            <p>Low-pressure systems and precision fertigation reduce inputs dramatically.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div>
+                        <div>
+                            <strong>Works on any terrain or crop</strong>
+                            <p>Our systems are engineered for flat fields, hillsides, orchards, greenhouses, and more.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div>
+                        <div>
+                            <strong>60 years of expertise</strong>
+                            <p>Backed by decades of agronomic research and real-world field data.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/agriculture" class="btn-primary mt-md">Explore Agriculture Solutions</a>
+            </div>
+            <div class="benefits-visual">
+                <div class="benefit-stat-card">
+                    <div class="big-stat">
+                        <span class="big-number">50%</span>
+                        <span class="big-label">Water Savings</span>
+                    </div>
+                    <div class="big-stat">
+                        <span class="big-number">30%</span>
+                        <span class="big-label">Yield Increase</span>
+                    </div>
+                    <div class="big-stat">
+                        <span class="big-number">40%</span>
+                        <span class="big-label">Fertilizer Reduction</span>
+                    </div>
+                    <div class="big-stat">
+                        <span class="big-number">60+</span>
+                        <span class="big-label">Years of Innovation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CROP SOLUTIONS ==================== -->
+<section class="section crop-section">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">Solutions By Crop</span>
+            <h2>A System Tailored to What You Grow</h2>
+            <p>Every crop has unique water and nutrient requirements. We build systems specific to your plant's biology and your field's conditions.</p>
+        </div>
+        <div class="crop-grid">
+            <a href="/agriculture/crops/alfalfa" class="crop-card">
+                <div class="crop-emoji">🌿</div>
+                <h4>Alfalfa</h4>
+                <p>Higher cuts per season with SDI</p>
+            </a>
+            <a href="/agriculture/crops/almonds" class="crop-card">
+                <div class="crop-emoji">🌰</div>
+                <h4>Almonds</h4>
+                <p>Maximize orchard water efficiency</p>
+            </a>
+            <a href="/agriculture/crops/citrus" class="crop-card">
+                <div class="crop-emoji">🍊</div>
+                <h4>Citrus</h4>
+                <p>Bigger fruit, more uniform yield</p>
+            </a>
+            <a href="/agriculture/crops/corn" class="crop-card">
+                <div class="crop-emoji">🌽</div>
+                <h4>Corn</h4>
+                <p>Sub-surface drip for row crops</p>
+            </a>
+            <a href="/agriculture/crops/cotton" class="crop-card">
+                <div class="crop-emoji">☁️</div>
+                <h4>Cotton</h4>
+                <p>SDI proven in water-limited regions</p>
+            </a>
+            <a href="/agriculture/crops/soybeans" class="crop-card">
+                <div class="crop-emoji">🫘</div>
+                <h4>Soybeans</h4>
+                <p>Consistent moisture through pod fill</p>
+            </a>
+            <a href="/agriculture/crops/strawberries" class="crop-card">
+                <div class="crop-emoji">🍓</div>
+                <h4>Strawberries</h4>
+                <p>Precise timing for premium berries</p>
+            </a>
+            <a href="/agriculture/crops/grapes" class="crop-card">
+                <div class="crop-emoji">🍇</div>
+                <h4>Wine Grapes</h4>
+                <p>Deficit irrigation for quality fruit</p>
+            </a>
+            <a href="/agriculture/crops" class="crop-card crop-card-all">
+                <div class="crop-emoji">+</div>
+                <h4>View All Crops</h4>
+                <p>20+ crop-specific systems</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== DIGITAL FARMING ==================== -->
+<section class="section digital-section">
+    <div class="container">
+        <div class="digital-layout">
+            <div class="digital-visual">
+                <div class="app-mockup">
+                    <div class="app-header">
+                        <span class="app-logo">DripSphere OS™</span>
+                        <span class="app-status badge-sm badge-green">● Live</span>
+                    </div>
+                    <div class="app-field-map">
+                        <div class="field-zone active">Zone A<br/><small>💧 Irrigating</small></div>
+                        <div class="field-zone">Zone B<br/><small>✓ Optimal</small></div>
+                        <div class="field-zone">Zone C<br/><small>✓ Optimal</small></div>
+                        <div class="field-zone scheduled">Zone D<br/><small>⏰ Scheduled</small></div>
+                    </div>
+                    <div class="app-metrics">
+                        <div class="app-metric">
+                            <span class="metric-icon">🌡️</span>
+                            <div>
+                                <div class="metric-val">72°F</div>
+                                <div class="metric-lbl">Air Temp</div>
+                            </div>
+                        </div>
+                        <div class="app-metric">
+                            <span class="metric-icon">💧</span>
+                            <div>
+                                <div class="metric-val">68%</div>
+                                <div class="metric-lbl">Soil Moisture</div>
+                            </div>
+                        </div>
+                        <div class="app-metric">
+                            <span class="metric-icon">⚡</span>
+                            <div>
+                                <div class="metric-val">12 gph</div>
+                                <div class="metric-lbl">Flow Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="digital-text">
+                <span class="section-eyebrow">Digital Farming</span>
+                <h2>Control Your Whole Farm From One App</h2>
+                <p>DripSphere OS™ is our smart irrigation and fertigation platform — giving you real-time visibility and full control over every zone, every crop, anywhere you are.</p>
+                <ul class="feature-list">
+                    <li>
+                        <div class="feature-icon">📊</div>
+                        <div><strong>Real-time soil moisture &amp; weather data</strong><br/>Make data-driven irrigation decisions — not guesswork.</div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">⚙️</div>
+                        <div><strong>Automated scheduling &amp; alerts</strong><br/>Set rules, get notified, and never over- or under-water again.</div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">🧪</div>
+                        <div><strong>Precision fertigation control</strong><br/>Deliver the right nutrients, at the right dose, at the right time.</div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">📱</div>
+                        <div><strong>Works on any device</strong><br/>iOS, Android, or desktop — your farm data is always at your fingertips.</div>
+                    </li>
+                </ul>
+                <a href="/digital-farming" class="btn-primary mt-md">Explore Digital Farming</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GROWER STORIES ==================== -->
+<section class="section stories-section">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <span class="section-eyebrow">Real Growers, Real Results</span>
+                <h2>Farmers Who Drip Smart</h2>
+            </div>
+            <a href="/growers-stories" class="btn-outline">View All Stories</a>
+        </div>
+        <div class="stories-grid">
+            <article class="story-card">
+                <div class="story-card-header">
+                    <div class="story-avatar">WP</div>
+                    <div>
+                        <div class="story-name">William K. Perry</div>
+                        <div class="story-meta">Alfalfa · Tonopah, Arizona</div>
+                    </div>
+                    <div class="story-badge">Case Study</div>
+                </div>
+                <h3>"We turned Arizona's toughest water restrictions into our competitive advantage."</h3>
+                <p>By switching to Drip Smart's SDI system, William K. Perry Farms dramatically improved water efficiency while maintaining high alfalfa yields — even as neighboring farms struggled with water scarcity.</p>
+                <div class="story-results">
+                    <div class="story-result"><span class="result-num">48%</span><span>Water Savings</span></div>
+                    <div class="story-result"><span class="result-num">+22%</span><span>Yield Increase</span></div>
+                </div>
+                <a href="/growers-stories/william-perry" class="story-link">Read Full Story →</a>
+            </article>
+
+            <article class="story-card">
+                <div class="story-card-header">
+                    <div class="story-avatar" style="background:#0288d1">KM</div>
+                    <div>
+                        <div class="story-name">Kevin Matthews</div>
+                        <div class="story-meta">Soybeans · North Carolina</div>
+                    </div>
+                    <div class="story-badge">Case Study</div>
+                </div>
+                <h3>"My worst-producing ground became my best-producing ground in one season."</h3>
+                <p>Kevin was ready to write off his low-yielding fields. After installing a drip system with targeted fertigation, those same fields outperformed his irrigated acreage — despite a record drought year.</p>
+                <div class="story-results">
+                    <div class="story-result"><span class="result-num">+35%</span><span>Yield Increase</span></div>
+                    <div class="story-result"><span class="result-num">$18K</span><span>Cost Savings/yr</span></div>
+                </div>
+                <a href="/growers-stories/kevin-matthews" class="story-link">Read Full Story →</a>
+            </article>
+
+            <article class="story-card">
+                <div class="story-card-header">
+                    <div class="story-avatar" style="background:#f57c00">TC</div>
+                    <div>
+                        <div class="story-name">Tony Cox</div>
+                        <div class="story-meta">Cotton · West Texas</div>
+                    </div>
+                    <div class="story-badge">Case Study</div>
+                </div>
+                <h3>"When our groundwater turned salty, drip irrigation saved the farm."</h3>
+                <p>Faced with rising salinity in his groundwater, Tony used subsurface drip to manage salt accumulation at the root zone — keeping his cotton operation viable when conventional systems would have failed.</p>
+                <div class="story-results">
+                    <div class="story-result"><span class="result-num">Farm</span><span>Saved</span></div>
+                    <div class="story-result"><span class="result-num">3 yrs</span><span>ROI Achieved</span></div>
+                </div>
+                <a href="/growers-stories/tony-cox" class="story-link">Read Full Story →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="section testimonials-section">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">What Growers Are Saying</span>
+            <h2>Don't Just Take Our Word For It</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>"The system paid for itself in two seasons. My water bill dropped by nearly half and my strawberry quality is the best it's ever been."</blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JR</div>
+                    <div>
+                        <div class="author-name">Jim Reynolds</div>
+                        <div class="author-title">Strawberry Grower · Watsonville, CA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>"DripSphere OS's app changed how I manage my 3,000 acres. I can adjust irrigation from my kitchen while drinking my morning coffee."</blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background:#388e3c">ML</div>
+                    <div>
+                        <div class="author-name">Maria Lopez</div>
+                        <div class="author-title">Almond Grower · Fresno, CA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <blockquote>"The local dealer knew exactly what my fields needed. DripSmart hardware, local know-how — everything worked together from day one."</blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background:#5d4037">DH</div>
+                    <div>
+                        <div class="author-name">Dave Hutchins</div>
+                        <div class="author-title">Corn &amp; Soybean Farmer · Iowa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FIND A DEALER ==================== -->
+<section class="section dealer-section">
+    <div class="container">
+        <div class="dealer-layout">
+            <div class="dealer-text">
+                <span class="section-eyebrow">Local Expertise</span>
+                <h2>Find a Dealer Near You</h2>
+                <p>Our network of certified dealers knows your local soil, water conditions, and crops. Get expert advice and hands-on support close to home.</p>
+                <a href="/find-a-dealer" class="btn-primary">Find Your Local Dealer</a>
+            </div>
+            <div class="dealer-form">
+                <form class="dealer-search-form" action="/find-a-dealer" method="get">
+                    <h3>Search Dealers</h3>
+                    <div class="form-group">
+                        <label for="zip">ZIP Code or City</label>
+                        <input type="text" id="zip" name="zip" placeholder="e.g. 93650 or Fresno, CA" />
+                    </div>
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry" name="industry">
+                            <option value="">All Industries</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="landscape">Landscape &amp; Turf</option>
+                            <option value="greenhouse">Greenhouse &amp; Nursery</option>
+                            <option value="wastewater">Wastewater</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Search →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== RESOURCES ==================== -->
+<section class="section resources-section">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <span class="section-eyebrow">Tools &amp; Learning</span>
+                <h2>Resources for Growers</h2>
+            </div>
+            <a href="/resources" class="btn-outline">All Resources</a>
+        </div>
+        <div class="resources-grid">
+            <a href="/agriculture/irrigation-academy" class="resource-card">
+                <div class="resource-icon">🎓</div>
+                <h4>Irrigation Academy</h4>
+                <p>Free online courses, how-tos, and expert guides to master precision irrigation.</p>
+                <span class="resource-tag">Free Learning</span>
+            </a>
+            <a href="/resources/hydrocalc" class="resource-card">
+                <div class="resource-icon">🧮</div>
+                <h4>HydroCalc 3.0</h4>
+                <p>Design your drip system right — our free hydraulic calculation tool does the math for you.</p>
+                <span class="resource-tag">Free Tool</span>
+            </a>
+            <a href="/financial-solutions" class="resource-card">
+                <div class="resource-icon">💰</div>
+                <h4>Financing Options</h4>
+                <p>Flexible payment plans and financing programs to help you get started without breaking the bank.</p>
+                <span class="resource-tag">Financing</span>
+            </a>
+            <a href="/blog" class="resource-card">
+                <div class="resource-icon">📰</div>
+                <h4>Blog &amp; News</h4>
+                <p>Stay current on irrigation technology, crop science, sustainability trends, and company news.</p>
+                <span class="resource-tag">Content</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section faq-section">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-text">
+                <span class="section-eyebrow">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Have a question that's not here? Our team is ready to help.</p>
+                <a href="/contact" class="btn-outline mt-md">Ask an Expert</a>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Can drip irrigation work on any shaped or sized field?</summary>
+                    <p>Yes. Drip irrigation is highly adaptable. Systems can be designed for irregular shapes, steep slopes, odd-sized plots, and large-scale operations alike. Your local DripSmart dealer will spec a layout specific to your land.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Does water quality affect my drip system?</summary>
+                    <p>Water quality matters, but it's fully manageable. DripSmart systems include filtration options and emitter designs rated for hard water, recycled water, and even dairy effluent — your dealer will match the spec to your source.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Will drip irrigation change my fertilizer routine?</summary>
+                    <p>Mostly for the better. Precision fertigation delivers nutrients directly to the root zone in smaller, more frequent doses — which typically reduces total fertilizer use by 20–40% while improving crop uptake efficiency.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does installation take?</summary>
+                    <p>It depends on the scale, but most farm installations are completed within a few days. Your certified DripSmart dealer handles installation and commissioning and will give you a timeline upfront.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What kind of support is available after installation?</summary>
+                    <p>DripSphere OS™ gives you real-time monitoring and alerts. Your local dealer provides hands-on maintenance and service support. And DripSmart's technical team backs every certified dealer with product expertise and warranty coverage.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
