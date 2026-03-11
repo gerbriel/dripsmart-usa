@@ -121,10 +121,11 @@
         });
     });
 
-    // ---- Inject mobile CTA row into nav ----
+    // ---- Inject mobile CTA row into nav (only rendered inside the off-canvas menu) ----
     if (nav) {
         var ctaRow = document.createElement('div');
         ctaRow.className = 'mobile-cta-row';
+        ctaRow.setAttribute('aria-hidden', 'true');
         ctaRow.innerHTML =
             '<a href="/find-a-dealer" class="btn-outline">Find a Dealer</a>' +
             '<a href="/contact" class="btn-primary">Get a Quote</a>';

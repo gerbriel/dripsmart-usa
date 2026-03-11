@@ -279,18 +279,21 @@ p { color: var(--text-muted); line-height: 1.7; }
     .dropdown-featured { margin-top: 12px; }
     .dropdown-promo { padding: 16px; }
 
-    /* Show CTAs inside mobile nav instead */
+    /* CTAs at bottom of mobile nav */
     .main-nav > ul::after {
         content: '';
         display: block;
     }
     .mobile-cta-row {
-        display: flex; flex-direction: column; gap: 12px;
+        display: flex !important; flex-direction: column; gap: 12px;
         padding: 20px 24px; margin-top: 8px;
     }
     .mobile-cta-row .btn-primary,
     .mobile-cta-row .btn-outline { width: 100%; justify-content: center; }
 }
+
+/* Hidden on desktop — only shown inside open mobile nav */
+.mobile-cta-row { display: none; }
 
 /* ============================================================
    HERO
