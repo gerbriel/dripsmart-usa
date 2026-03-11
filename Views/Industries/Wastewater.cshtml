@@ -1,154 +1,198 @@
 @{
-    ViewBag.Title = "Wastewater Irrigation – Drip Smart USA";
-    ViewBag.MetaDescription = "Sub-surface drip irrigation for treated wastewater and effluent reuse. Compliant, efficient, and built to handle reclaimed water applications.";
+    ViewBag.Title = "Wastewater Irrigation & Drip Dispersal – Drip Smart USA";
+    ViewBag.MetaDescription = "Failing drain fields, discharge permit violations, and rising disposal costs? Sub-surface drip dispersal turns effluent from a liability into a managed, compliant resource.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- Hero -->
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero" style="position:relative;background: linear-gradient(135deg, #0e1438 0%, #181F4E 100%);">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1548695607-9c73430011c8?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
-            <div class="breadcrumb"><a href="/">Home</a> › <a href="/industries">Industries</a> › <span>Wastewater</span></div>
+            <div class="breadcrumb"><a href="/">Home</a> › <span>Wastewater</span></div>
             <div class="page-hero-text">
                 <span class="section-eyebrow">Wastewater</span>
-                <h1>Turn Effluent Into<br>a Valuable Resource.</h1>
-                <p>Our sub-surface drip irrigation systems are engineered for safe, compliant disposal and reuse of treated wastewater — keeping effluent underground, away from contact, and out of waterways.</p>
+                <h1>Stop Fighting Effluent.<br>Start Managing It.</h1>
+                <p>Wastewater isn't just a disposal problem — it's a water resource in the wrong place. Sub-surface drip dispersal puts it back to work safely, compliantly, and without surface contact. No discharge. No exposure. No regulatory headaches.</p>
                 <div class="hero-actions">
-                    <a href="/contact" class="btn-primary btn-lg">Talk to a Specialist</a>
+                    <a href="/contact" class="btn-primary btn-lg">Talk to a Wastewater Specialist</a>
                     <a href="/resources" class="btn-ghost">Download Spec Sheet</a>
                 </div>
             </div>
         </div>
         <div class="crop-hero-stats">
-            <div class="crop-stat"><span class="crop-stat-num">100%</span><span class="crop-stat-label">Sub-surface Containment</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">0</span><span class="crop-stat-label">Surface Exposure</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">50+</span><span class="crop-stat-label">States Compliant</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">30yr</span><span class="crop-stat-label">Field Proven</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">100%</span><span class="crop-stat-label">Sub-Surface Containment</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">0</span><span class="crop-stat-label">Surface Exposure Risk</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">50+</span><span class="crop-stat-label">State Approvals</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">30yr</span><span class="crop-stat-label">Field-Proven Technology</span></div>
         </div>
     </div>
 </section>
 
-<!-- Solutions -->
+<!-- Pain Points -->
 <section class="section bg-cream">
     <div class="container">
         <div class="section-header centered">
-            <span class="section-eyebrow">Applications</span>
-            <h2>Where We Solve Effluent Challenges</h2>
-            <p>From small onsite systems to large municipal land application sites, DripSmart's engineered solutions meet local, state, and federal disposal requirements.</p>
+            <span class="section-eyebrow">The Problems Our Clients Face</span>
+            <h2>Effluent Challenges That Don't Have Easy Answers — Until Now</h2>
+            <p>Whether it's a failing septic field, a municipal discharge permit, or ag water reuse compliance, the common thread is the same: there's water that needs somewhere to go, and nowhere safe to put it.</p>
         </div>
         <div class="three-col-grid">
-            <div class="info-card">
-                <div class="info-card-icon">🏠</div>
-                <h3>Onsite Septic Systems</h3>
-                <p>Replace failing drain fields with long-lasting drip dispersal systems. Ideal for challenging soils, small lots, and setback-constrained sites.</p>
-                <ul class="check-list">
-                    <li>NSF 245/61 certified products</li>
-                    <li>Anti-siphon check valves</li>
-                    <li>Soil loading rate calculations provided</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">🚨</div>
+                <h3>Failing Drain Fields and No Room to Expand</h3>
+                <p>Conventional septic drain fields fail when soils saturate, properties are constrained, or setback requirements can't be met. Replacement in kind isn't always possible — and regulators are losing patience with repeated failures.</p>
+                <div class="pain-solution">✓ Sub-surface drip dispersal systems work in challenging soils, tight lots, and setback-constrained sites where conventional drainfields can't be placed.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">🏭</div>
-                <h3>Municipal Land Application</h3>
-                <p>Large-scale sub-surface drip application of Class A or Class B reclaimed water on agricultural land, buffer zones, and public green space.</p>
-                <ul class="check-list">
-                    <li>High flow driplines up to 2 GPH/emitter</li>
-                    <li>Anti-intrusion root barriers</li>
-                    <li>SCADA-compatible control systems</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">📋</div>
+                <h3>Discharge Permits That Are Getting Harder to Keep</h3>
+                <p>Surface discharge limits keep tightening. Fines for violations escalate. Municipal facilities and food processors are facing discharge requirements that their current systems can't meet — and the cost of non-compliance is climbing.</p>
+                <div class="pain-solution">✓ Sub-surface drip dispersal eliminates surface discharge entirely — turning a permit compliance problem into a land application solution.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">🌾</div>
-                <h3>Agricultural Reuse</h3>
-                <p>Apply reclaimed water directly to crop root zones with zero runoff, zero aerial spray, and full compliance with ag water reuse standards.</p>
-                <ul class="check-list">
-                    <li>Title 22 compliant systems</li>
-                    <li>Nutrient credit tracking software</li>
-                    <li>Crop-specific loading rate guidance</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">💰</div>
+                <h3>Rising Hauling and Treatment Costs</h3>
+                <p>For remote facilities and rural operations, hauling effluent is expensive, unpredictable, and dependent on trucking availability. When haul costs spike, so does your operating budget — with zero warning.</p>
+                <div class="pain-solution">✓ On-site drip dispersal eliminates hauling entirely. Once installed, operating costs are minimal and predictable.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">🏕️</div>
-                <h3>RV Parks &amp; Remote Sites</h3>
-                <p>Compact, automated drip dispersal for remote facilities, campgrounds, and rural commercial properties where centralized sewer is unavailable.</p>
-                <ul class="check-list">
-                    <li>Systems sized 200–50,000 GPD</li>
-                    <li>Filter &amp; pump assembly included</li>
-                    <li>Alarm and telemetry monitoring</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">🌊</div>
+                <h3>Runoff and Groundwater Risk</h3>
+                <p>Surface-applied or poorly managed effluent creates real liability — contaminated groundwater, surface water violations, and public health concerns. Regulators and communities are watching more closely than ever.</p>
+                <div class="pain-solution">✓ Effluent is dispersed below grade where aerobic soil microbes provide final treatment before any groundwater contact. Zero surface runoff. Zero aerial exposure.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">🏗️</div>
-                <h3>Food Processing Facilities</h3>
-                <p>High-strength process wastewater from food &amp; beverage operations is nutrient-rich. Our systems turn that into a valuable soil amendment while meeting permit limits.</p>
-                <ul class="check-list">
-                    <li>High-flow emitter options</li>
-                    <li>Clog-resistant anti-siphon drippers</li>
-                    <li>BOD/TSS pre-treatment guidance</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">🏕️</div>
+                <h3>Remote Sites with No Sewer Access</h3>
+                <p>Campgrounds, rural commercial properties, food processing facilities, and remote resorts need reliable on-site treatment and dispersal — and conventional systems often aren't sized or designed for the load they're actually managing.</p>
+                <div class="pain-solution">✓ DripSmart drip dispersal systems scale from 200 to 500,000+ GPD and can be automated to operate fully unattended with remote monitoring.</div>
             </div>
-            <div class="highlight-card">
-                <div class="info-card-icon">📋</div>
-                <h3>Permitting &amp; Compliance Support</h3>
-                <p>Our engineering team has assisted with permitting in over 35 states. We provide hydraulic calculations, loading rate reports, and regulatory documentation packages.</p>
-                <a href="/contact" class="btn-outline-dark mt-md">Request Engineering Support</a>
+            <div class="pain-card">
+                <div class="pain-icon">📑</div>
+                <h3>Complex Permitting with No In-House Expertise</h3>
+                <p>Wastewater irrigation permitting varies by state and is rarely straightforward. Without the right hydraulic calculations, loading rate data, and regulatory documentation, projects stall for months — or get rejected entirely.</p>
+                <div class="pain-solution">✓ Our engineering team has assisted with permitting in 35+ states and provides complete documentation packages — not just equipment.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Stats -->
-<section class="section" style="padding:0;">
-    <div class="container">
-        <div class="stat-strip">
-            <div class="stat-strip-item"><span class="stat-strip-num">30yr</span><span class="stat-strip-label">Field Proven Technology</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">50+</span><span class="stat-strip-label">State Approvals</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">0</span><span class="stat-strip-label">Surface Exposure Risk</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">100%</span><span class="stat-strip-label">Compliant Systems</span></div>
-        </div>
-    </div>
-</section>
-
-<!-- How it works -->
+<!-- How It Works -->
 <section class="section">
     <div class="container">
         <div class="two-col-layout">
             <div>
-                <span class="section-eyebrow">How It Works</span>
-                <h2>Sub-Surface Drip Dispersal Explained</h2>
-                <p>Treated effluent is pumped through a pressurized network of sub-surface driplines buried 6–18 inches below grade. Emitters release small, precise doses directly into the soil — where aerobic microbes provide final treatment before any groundwater contact.</p>
-                <ul class="check-list" style="margin-top:20px;">
-                    <li>Effluent is pre-filtered to prevent clogging</li>
-                    <li>Pressure-compensating emitters ensure uniform distribution</li>
-                    <li>Flushing cycles remove biofilm buildup automatically</li>
-                    <li>Anti-siphon valves prevent back-contamination</li>
-                    <li>Soil monitoring probes verify safe loading rates</li>
+                <span class="section-eyebrow">How Sub-Surface Drip Dispersal Works</span>
+                <h2>The Soil Does the Work. The System Controls When and Where.</h2>
+                <p>Treated effluent is pumped through a pressurized network of driplines buried 6–18 inches below grade. Emitters release small, precise doses into the soil — where natural aerobic microbial activity provides the final treatment step before any potential groundwater contact.</p>
+                <p style="margin-top:16px;">The system doesn't just dump effluent underground. It manages the application rate, timing, and uniformity so the soil's treatment capacity is never overwhelmed.</p>
+                <ul class="check-list" style="margin-top:24px;">
+                    <li>Effluent is pre-filtered to prevent emitter clogging</li>
+                    <li>Pressure-compensating emitters ensure uniform field application</li>
+                    <li>Automated flushing cycles prevent biofilm buildup</li>
+                    <li>Anti-siphon valves eliminate back-contamination risk</li>
+                    <li>Soil moisture probes verify loading rates are within permit limits</li>
+                    <li>DripSphere OS™ provides automated reporting for regulatory compliance</li>
                 </ul>
-                <a href="/contact" class="btn-primary mt-lg">Get a Site Evaluation</a>
+                <a href="/contact" class="btn-primary mt-lg">Request a Site Evaluation</a>
             </div>
-            <div>
-                <div class="info-card" style="margin-bottom:16px;">
-                    <div class="info-card-icon">🔬</div>
-                    <h3>NSF 245 Certified</h3>
-                    <p>All DripSmart wastewater dripline products carry NSF/ANSI 245 certification — the gold standard for effluent drip dispersal systems in the United States.</p>
+            <div style="display:flex; flex-direction:column; gap:20px;">
+                <div class="info-card">
+                    <div class="info-card-icon">🏠</div>
+                    <h3>Onsite Septic Systems</h3>
+                    <p>Replace failing drain fields with long-lasting drip dispersal. Works on challenging soils, small lots, and sites where conventional drainfields can't go — and where a failed system isn't an option.</p>
                 </div>
                 <div class="info-card">
-                    <div class="info-card-icon">📡</div>
-                    <h3>Remote System Monitoring</h3>
-                    <p>Our DripSphere OS™ industrial monitoring package tracks flow rates, pressure, alarm conditions, and cumulative volume in real time — with automated reporting for regulatory compliance.</p>
+                    <div class="info-card-icon">🏭</div>
+                    <h3>Municipal &amp; Agricultural Reuse</h3>
+                    <p>Large-scale sub-surface application of Class A or B reclaimed water on agricultural land, buffer zones, and green space — with nutrient credit tracking and full compliance documentation.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">🏗️</div>
+                    <h3>Food Processing &amp; Industrial Facilities</h3>
+                    <p>High-strength process wastewater is nutrient-rich. Our systems turn it into a managed soil amendment while keeping you inside permit limits — no hauling, no violations, no surprises.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA -->
-<div class="callout-band">
+<!-- Stats Strip -->
+<section class="section" style="padding:0;">
     <div class="container">
-        <h2>Need a Compliant Effluent Disposal Solution?</h2>
-        <p>Our engineers specialize in complex wastewater irrigation challenges. Let's design your system together.</p>
+        <div class="stat-strip">
+            <div class="stat-strip-item"><span class="stat-strip-num">30yr</span><span class="stat-strip-label">Field-Proven Technology</span></div>
+            <div class="stat-strip-item"><span class="stat-strip-num">50+</span><span class="stat-strip-label">State Approvals on Record</span></div>
+            <div class="stat-strip-item"><span class="stat-strip-num">Zero</span><span class="stat-strip-label">Surface Exposure Risk</span></div>
+            <div class="stat-strip-item"><span class="stat-strip-num">NSF 245</span><span class="stat-strip-label">Certified Products</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Compliance callout -->
+<section class="section bg-cream">
+    <div class="container">
+        <div class="two-col-layout" style="align-items:center;">
+            <div>
+                <span class="section-eyebrow">Compliance Isn't Optional</span>
+                <h2>We've Helped Projects Get Permitted in 35+ States</h2>
+                <p>Wastewater irrigation permitting is never simple. Every state has different standards for loading rates, setback distances, monitoring requirements, and water quality thresholds. We know what regulators need — and we deliver it.</p>
+                <ul class="check-list" style="margin-top:20px;">
+                    <li>Hydraulic design calculations prepared for permit submission</li>
+                    <li>Soil loading rate analysis and site evaluation</li>
+                    <li>NSF 245/61 certified products throughout</li>
+                    <li>DripSphere OS™ automated compliance reporting</li>
+                    <li>Engineering support from application through final inspection</li>
+                </ul>
+                <a href="/contact" class="btn-primary mt-lg">Talk to Our Engineering Team</a>
+            </div>
+            <div class="stat-feature-card">
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">📋</div>
+                    <div>
+                        <div class="stat-feature-num">35+</div>
+                        <div class="stat-feature-label">States where we've supported permitting</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">🔬</div>
+                    <div>
+                        <div class="stat-feature-num">NSF 245</div>
+                        <div class="stat-feature-label">Certified — the gold standard for effluent drip dispersal</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">📡</div>
+                    <div>
+                        <div class="stat-feature-num">24/7</div>
+                        <div class="stat-feature-label">Automated monitoring with real-time compliance reporting</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photo Banner -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1600&q=80" alt="Green field with irrigation and blue sky" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.72) 0%, rgba(14,20,56,0.15) 60%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:520px;color:white;">
+                <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#89C1FF;margin-bottom:10px;">Sub-Surface Drip Dispersal</div>
+                <div style="font-size:1.85rem;font-weight:800;line-height:1.2;margin-bottom:14px;">No discharge. No exposure.<br>No violations. No surprises.</div>
+                <a href="/contact" class="btn-primary">Talk to a Specialist</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+        <p>Our engineers specialize in complex wastewater challenges. Tell us your situation and we'll tell you exactly what it takes to solve it.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
             <a href="/contact" class="btn-white">Request a Site Evaluation</a>
-            <a href="/resources" class="btn-outline-white">Download Spec Sheets</a>
+            <a href="/resources" class="btn-outline-white">Download Spec Sheet</a>
         </div>
     </div>
 </div>

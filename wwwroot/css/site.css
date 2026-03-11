@@ -833,6 +833,18 @@ p { color: var(--text-muted); line-height: 1.7; }
 .callout-mustard h2 { color: var(--midnight); margin-bottom: 12px; }
 .callout-mustard p { color: rgba(24,31,78,0.75); margin-bottom: 28px; }
 
+/* Pain Cards */
+.pain-card { background: white; border: 1px solid rgba(0,0,0,0.08); border-radius: var(--radius-md); padding: 28px; }
+.pain-icon { font-size: 2rem; margin-bottom: 12px; }
+.pain-solution { margin-top: 16px; padding: 12px 16px; background: rgba(59,152,255,0.08); border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; font-size: 0.875rem; font-weight: 600; color: var(--midnight); }
+
+/* Stat Feature Cards */
+.stat-feature-card { background: var(--midnight); border-radius: var(--radius-lg); padding: 36px; display: flex; flex-direction: column; gap: 24px; }
+.stat-feature-row { display: flex; align-items: center; gap: 20px; }
+.stat-feature-icon { font-size: 2rem; flex-shrink: 0; }
+.stat-feature-num { font-size: 2rem; font-weight: 800; color: #3B98FF; line-height: 1; }
+.stat-feature-label { font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
 @media (max-width: 1024px) {
     .stat-strip { grid-template-columns: repeat(2,1fr); }
     .industry-strip { grid-template-columns: repeat(3,1fr); }

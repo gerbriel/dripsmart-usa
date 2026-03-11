@@ -1,28 +1,131 @@
 @{
     ViewBag.Title = "Landscape & Turf Irrigation – Drip Smart USA";
-    ViewBag.MetaDescription = "Precision irrigation solutions for landscape architects, golf courses, sports turf, and commercial properties. Conserve water, protect your investment.";
+    ViewBag.MetaDescription = "Stop wasting water on sidewalks and streets. Precision drip irrigation for golf courses, sports turf, commercial properties, and residential landscapes.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- Hero -->
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero" style="position:relative;background: linear-gradient(135deg, #0e1438 0%, #181F4E 100%);">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
-            <div class="breadcrumb"><a href="/">Home</a> › <a href="/industries">Industries</a> › <span>Landscape &amp; Turf</span></div>
+            <div class="breadcrumb"><a href="/">Home</a> › <span>Landscape &amp; Turf</span></div>
             <div class="page-hero-text">
                 <span class="section-eyebrow">Landscape &amp; Turf</span>
-                <h1>Greener Spaces.<br>Smarter Water Use.</h1>
-                <p>From golf course fairways to commercial campuses and residential estates — our precision drip and micro-irrigation systems keep landscapes lush while cutting water use by up to 50%.</p>
+                <h1>Beautiful Landscapes.<br>Half the Water Bill.</h1>
+                <p>Water restrictions are tightening. Spray heads waste up to 50% of their water to wind drift and evaporation. Drip irrigation changes the equation — delivering water exactly where roots are, not where they aren't.</p>
                 <div class="hero-actions">
-                    <a href="/contact" class="btn-primary btn-lg">Get a Landscape Quote</a>
-                    <a href="/find-a-dealer" class="btn-ghost">Find a Dealer</a>
+                    <a href="/contact" class="btn-primary btn-lg">Get a Free Assessment</a>
+                    <a href="/find-a-dealer" class="btn-ghost">Find a Local Installer</a>
                 </div>
             </div>
         </div>
         <div class="crop-hero-stats">
-            <div class="crop-stat"><span class="crop-stat-num">50%</span><span class="crop-stat-label">Average Water Savings</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">25K+</span><span class="crop-stat-label">Landscapes Installed</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">99%</span><span class="crop-stat-label">Uniformity Rating</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">50%</span><span class="crop-stat-label">Less Water Than Spray</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">0</span><span class="crop-stat-label">Wet Sidewalks or Runoff</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">LEED</span><span class="crop-stat-label">Credit Compatible</span></div>
             <div class="crop-stat"><span class="crop-stat-num">15yr</span><span class="crop-stat-label">System Lifespan</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Pain Points -->
+<section class="section bg-cream">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">Sound Familiar?</span>
+            <h2>The Problems Every Landscape Manager Knows</h2>
+            <p>These aren't rare edge cases — they're the everyday frustrations drip irrigation was built to solve.</p>
+        </div>
+        <div class="three-col-grid">
+            <div class="pain-card">
+                <div class="pain-icon">💸</div>
+                <h3>Water Bills That Never Stop Climbing</h3>
+                <p>Spray and rotor systems apply water indiscriminately — over sidewalks, hardscaping, and compacted areas where it runs straight off. You're paying for water that never reaches a root zone.</p>
+                <div class="pain-solution">✓ Drip delivers only to root zones — nothing wasted on pavement or air.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🚫</div>
+                <h3>Water Restrictions Threatening Your Contracts</h3>
+                <p>Municipal mandates are limiting irrigation days and windows. Spray systems can't comply and still keep landscapes alive in summer heat. You're forced to choose between compliance and dead plants.</p>
+                <div class="pain-solution">✓ Drip systems often qualify for restrictions exemptions and use up to 50% less water while maintaining the same plant health.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🍄</div>
+                <h3>Disease from Wet Foliage</h3>
+                <p>Overhead watering keeps leaves and crowns chronically wet — creating ideal conditions for fungal disease, mold, and root rot that cost real money in plant replacement and labor.</p>
+                <div class="pain-solution">✓ Drip keeps water at the root zone, not on foliage — dramatically reducing fungal pressure and plant loss.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">⚠️</div>
+                <h3>Liability from Overspray onto Hardscapes</h3>
+                <p>Overspray onto walkways, driveways, and roads creates slip hazards and staining. In commercial settings that's real liability exposure — and insurers are taking notice.</p>
+                <div class="pain-solution">✓ Subsurface and surface drip stays below the canopy — no runoff, no hazards, no complaints.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">⏰</div>
+                <h3>Labor Drain from Constant Repairs</h3>
+                <p>Broken heads, clogged nozzles, and uneven coverage mean crews are constantly troubleshooting instead of maintaining. Spray heads get hit by mowers, pedestrians, and vehicles every week.</p>
+                <div class="pain-solution">✓ Low-profile drip systems are nearly invisible, highly durable, and require far less maintenance than spray or rotor systems.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">📋</div>
+                <h3>LEED and Sustainability Requirements</h3>
+                <p>Developers and property owners increasingly require LEED-compliant water management. Standard spray irrigation doesn't earn points — and you're the one who has to explain it to a client.</p>
+                <div class="pain-solution">✓ DripSmart systems are LEED credit compatible and come with the documentation needed for certification.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Helps -->
+<section class="section">
+    <div class="container">
+        <div class="two-col-layout">
+            <div>
+                <span class="section-eyebrow">The DripSmart Difference</span>
+                <h2>Water Smarter, Not More</h2>
+                <p>DripSmart landscape systems deliver water in slow, steady doses directly into the root zone — subsurface or at soil level. Roots get consistent moisture. Foliage stays dry. Water usage drops immediately.</p>
+                <ul class="check-list" style="margin-top:24px;">
+                    <li><strong>Root zone delivery</strong> — water goes exactly where it's used</li>
+                    <li><strong>No overspray, no runoff</strong> — complies with water window restrictions</li>
+                    <li><strong>Works everywhere</strong> — beds, turf, trees, slopes, containers, estates</li>
+                    <li><strong>DripSphere OS™ integration</strong> — smart scheduling with rain and soil sensors</li>
+                    <li><strong>15-year product warranty</strong> — engineered for lasting performance</li>
+                    <li><strong>Invisible installation</strong> — no exposed heads to hit or vandalize</li>
+                </ul>
+                <a href="/contact" class="btn-primary mt-lg">Talk to a Landscape Specialist</a>
+            </div>
+            <div class="stat-feature-card">
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">💧</div>
+                    <div>
+                        <div class="stat-feature-num">50%</div>
+                        <div class="stat-feature-label">Average water reduction vs. spray systems</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">🌿</div>
+                    <div>
+                        <div class="stat-feature-num">30%</div>
+                        <div class="stat-feature-label">Reduction in plant loss from disease and inconsistency</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">⚙️</div>
+                    <div>
+                        <div class="stat-feature-num">90%</div>
+                        <div class="stat-feature-label">Irrigation efficiency vs. 50–70% for spray heads</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">📱</div>
+                    <div>
+                        <div class="stat-feature-num">24/7</div>
+                        <div class="stat-feature-label">Remote monitoring &amp; alerts with DripSphere OS™</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -32,137 +135,107 @@
     <div class="container">
         <div class="section-header centered">
             <span class="section-eyebrow">Applications</span>
-            <h2>Irrigation for Every Landscape</h2>
-            <p>Whether you manage a municipal park or a private estate, we have a system engineered for your specific environment.</p>
+            <h2>Every Landscape Type. One Proven Approach.</h2>
         </div>
         <div class="three-col-grid">
             <div class="info-card">
                 <div class="info-card-icon">⛳</div>
                 <h3>Golf Courses</h3>
-                <p>Precision fairway and green irrigation that maximizes playability and minimizes water bills. Smart sensors auto-adjust for weather and soil moisture in real time.</p>
-                <ul class="check-list">
-                    <li>Fairway drip systems</li>
-                    <li>Greens micro-spray</li>
-                    <li>Automated weather-based scheduling</li>
-                    <li>USGA certified products</li>
-                </ul>
+                <p>Fairways under water restrictions can't just cut days — they need smarter irrigation. Subsurface drip maintains playability while slashing usage, giving superintendents real-time zone control from anywhere on the course.</p>
             </div>
             <div class="info-card">
                 <div class="info-card-icon">🏟️</div>
-                <h3>Sports Turf</h3>
-                <p>Sub-surface drip irrigation delivers water directly to the root zone for fast-growing, resilient playing surfaces — with no wet spots or muddy sidelines.</p>
-                <ul class="check-list">
-                    <li>Sub-surface drip tubing</li>
-                    <li>Even moisture distribution</li>
-                    <li>Reduced compaction risk</li>
-                    <li>Compatible with synthetic turf cooling</li>
-                </ul>
+                <h3>Sports Fields &amp; Stadiums</h3>
+                <p>Wet sidelines and inconsistent turf quality come from overhead irrigation. Sub-surface drip delivers uniform moisture with no surface wetness — no injuries, no missed game days from waterlogged fields.</p>
             </div>
             <div class="info-card">
                 <div class="info-card-icon">🏢</div>
-                <h3>Commercial Properties</h3>
-                <p>Corporate campuses, HOA communities, and retail properties benefit from automated, low-maintenance drip systems that stay invisible while keeping grounds beautiful.</p>
-                <ul class="check-list">
-                    <li>Low-profile dripline installation</li>
-                    <li>Centralized zone controls</li>
-                    <li>LEED certification compatible</li>
-                    <li>24/7 remote monitoring</li>
-                </ul>
+                <h3>Commercial &amp; HOA Properties</h3>
+                <p>Property managers face water bills, resident complaints about overspray, and high maintenance labor all at once. DripSmart reduces all three — with remote monitoring so you catch issues before residents ever notice.</p>
             </div>
             <div class="info-card">
                 <div class="info-card-icon">🌳</div>
-                <h3>Trees &amp; Shrubs</h3>
-                <p>Deep root watering bubblers and ring emitters provide slow, targeted delivery that encourages deep root establishment and drought tolerance.</p>
-                <ul class="check-list">
-                    <li>Tree bubblers and root feeders</li>
-                    <li>Pressure-compensating emitters</li>
-                    <li>Suitable for slopes and terraces</li>
-                </ul>
+                <h3>Trees, Shrubs &amp; Slopes</h3>
+                <p>Steep grades cause runoff before water soaks in. Drip runs slowly enough that slopes absorb every drop — and deep root watering builds drought tolerance so you're less dependent on irrigation over time.</p>
             </div>
             <div class="info-card">
                 <div class="info-card-icon">🌺</div>
-                <h3>Garden Beds &amp; Borders</h3>
-                <p>Micro-drip and soaker systems for ornamental plantings, raised beds, and seasonal gardens. Reduces fungal disease by keeping foliage dry.</p>
-                <ul class="check-list">
-                    <li>In-line and on-line drippers</li>
-                    <li>Adjustable flow emitters</li>
-                    <li>Weed suppression effect</li>
-                </ul>
+                <h3>Garden Beds &amp; Planters</h3>
+                <p>Ornamental plantings suffer most from inconsistent watering — both under-watering and fungal damage from overhead spray. In-line drip solves both problems while reducing weeding from dry inter-row areas.</p>
             </div>
-            <div class="highlight-card">
-                <div class="info-card-icon">💡</div>
-                <h3>DripSphere OS™ Smart Control</h3>
-                <p>Pair any landscape system with our DripSphere OS™ controller. Schedule, monitor, and optimize every zone from your smartphone — with automatic rain shutoff included.</p>
-                <a href="/digital-farming" class="btn-outline-dark mt-md">Explore DripSphere OS™</a>
+            <div class="info-card">
+                <div class="info-card-icon">🏘️</div>
+                <h3>Residential Estates</h3>
+                <p>High-end properties with complex zones, mixed turf, and specimen planting need irrigation that performs as a unified system — not a collection of mismatched zones. We design it right and back it with local service.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Stats strip -->
-<section class="section" style="padding: 0;">
+<!-- Smart Control -->
+<section class="section" style="background: var(--midnight); color: white;">
     <div class="container">
-        <div class="stat-strip">
-            <div class="stat-strip-item"><span class="stat-strip-num">50%</span><span class="stat-strip-label">Less Water Than Spray</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">90%</span><span class="stat-strip-label">Irrigation Efficiency</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">$0</span><span class="stat-strip-label">Wet Foliage &amp; Disease</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">24/7</span><span class="stat-strip-label">Smart Monitoring</span></div>
-        </div>
-    </div>
-</section>
-
-<!-- Products -->
-<section class="section">
-    <div class="container">
-        <div class="section-header">
+        <div class="two-col-layout" style="align-items:center;">
             <div>
-                <span class="section-eyebrow">Products</span>
-                <h2>Purpose-Built Landscape Products</h2>
+                <span class="section-eyebrow" style="color: var(--blue);">DripSphere OS™</span>
+                <h2 style="color:white;">Know Your Irrigation Is Running — Without Driving Out to Check</h2>
+                <p style="opacity:0.8;">DripSphere OS™ gives landscape managers a live view of every zone — soil moisture, run status, flow rate, and alerts — from their phone. Automatic rain shutoff, seasonal adjustments, and flow leak detection mean fewer site visits and zero surprises.</p>
+                <ul class="check-list" style="margin-top:20px; color:white;">
+                    <li>EPA WaterSense certified controller</li>
+                    <li>Automatic rain and freeze shutoff</li>
+                    <li>Real-time flow alerts catch leaks before they become floods</li>
+                    <li>Multi-property management from one dashboard</li>
+                </ul>
+                <a href="/digital-farming" class="btn-primary mt-lg">Explore DripSphere OS™</a>
             </div>
-            <a href="/resources" class="btn-outline">View Catalog</a>
+            <div style="background: rgba(59,152,255,0.08); border: 1px solid rgba(59,152,255,0.2); border-radius: 16px; padding: 32px;">
+                <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; opacity:0.5; color:white; margin-bottom:20px;">DripSphere OS™ — Live View</div>
+                <div style="display:flex; flex-direction:column; gap:12px;">
+                    <div style="background:rgba(59,152,255,0.15); border-radius:10px; padding:14px; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:#89C1FF; font-weight:600; font-size:0.9rem;">Zone 1 — Front Beds</span>
+                        <span style="background:#3B98FF; color:white; font-size:0.7rem; font-weight:700; padding:3px 10px; border-radius:99px;">Running</span>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.05); border-radius:10px; padding:14px; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:rgba(255,255,255,0.7); font-size:0.9rem;">Zone 2 — Turf Area</span>
+                        <span style="opacity:0.5; font-size:0.8rem; color:white;">✓ Complete</span>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.05); border-radius:10px; padding:14px; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:rgba(255,255,255,0.7); font-size:0.9rem;">Zone 3 — Tree Row</span>
+                        <span style="opacity:0.5; font-size:0.8rem; color:white;">⏰ Scheduled 6am</span>
+                    </div>
+                    <div style="background:rgba(255,188,3,0.1); border:1px solid rgba(255,188,3,0.25); border-radius:10px; padding:14px;">
+                        <div style="font-size:0.72rem; font-weight:700; color:#FFBC03; margin-bottom:4px;">ALERT</div>
+                        <div style="font-size:0.85rem; color:rgba(255,255,255,0.8);">Rain forecast tomorrow — schedule auto-paused. No action needed.</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="three-col-grid">
-            <div class="product-card">
-                <div class="product-card-icon">🟦</div>
-                <span class="product-tag">Drip</span>
-                <h3>TopDrip™ Landscape Line</h3>
-                <p>Brown or green dripline engineered for landscape beds with built-in root intrusion barrier and 15-year product warranty.</p>
-                <a href="/resources" class="btn-primary-sm">Learn More →</a>
+    </div>
+</section>
+
+<!-- Photo Banner -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1600&q=80" alt="Lush green landscape with irrigation" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.72) 0%, rgba(14,20,56,0.15) 60%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:520px;color:white;">
+                <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#89C1FF;margin-bottom:10px;">The DripSmart Difference</div>
+                <div style="font-size:1.85rem;font-weight:800;line-height:1.2;margin-bottom:14px;">The same lush results.<br>Half the water.</div>
+                <a href="/contact" class="btn-primary">Get a Free Assessment</a>
             </div>
-            <div class="product-card">
-                <div class="product-card-icon">💦</div>
-                <span class="product-tag">Micro-Spray</span>
-                <h3>SpinNet™ Micro-Sprayers</h3>
-                <p>Adjustable arc micro-sprays for groundcover and dense planting areas. Available in 90°, 180°, and 360° coverage patterns.</p>
-                <a href="/resources" class="btn-primary-sm">Learn More →</a>
-            </div>
-            <div class="product-card">
-                <div class="product-card-icon">🧠</div>
-                <span class="product-tag">Smart Control</span>
-                <h3>DripSphere OS™ LC Controller</h3>
-                <p>Landscape-specific controller with Wi-Fi, 16 zones, and EPA WaterSense certification. Pays for itself in water savings.</p>
-                <a href="/digital-farming" class="btn-primary-sm">Learn More →</a>
-            </div>
-            <div class="product-card">
-                <div class="product-card-icon">🌊</div>
-                <span class="product-tag">Subsurface</span>
-                <h3>SubTurf™ SDI System</h3>
-                <p>Sub-surface drip irrigation designed for sports fields and high-traffic areas. Invisible, efficient, and virtually maintenance-free.</p>
-                <a href="/resources" class="btn-primary-sm">Learn More →</a>
-            </div>
-            <div class="product-card">
-                <div class="product-card-icon">🔩</div>
-                <span class="product-tag">Fittings</span>
-                <h3>FlexFit™ Connectors</h3>
-                <p>UV-resistant barbed, threaded, and push-fit connectors compatible with all DripSmart tubing and standard landscape pipe.</p>
-                <a href="/resources" class="btn-primary-sm">Learn More →</a>
-            </div>
-            <div class="product-card">
-                <div class="product-card-icon">🔽</div>
-                <span class="product-tag">Pressure Regulation</span>
-                <h3>AquaReg™ Pressure Regulators</h3>
-                <p>Inline pressure regulators that protect emitters on high-pressure municipal supply lines. Essential for long-lasting performance.</p>
-                <a href="/resources" class="btn-primary-sm">Learn More →</a>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial -->
+            <div class="stars">★★★★★</div>
+            <blockquote style="font-size:1.2rem; line-height:1.75;">"Our HOA community switched from rotors to DripSmart drip and our water bill dropped 44% in the first full season. No more complaints about wet sidewalks or brown spots. The system just works — and the DripSphere OS controller means I never have to go on-site to deal with a rained-out schedule."</blockquote>
+            <div class="testimonial-author" style="justify-content:center; margin-top:24px;">
+                <div class="author-avatar" style="background:var(--midnight);">RC</div>
+                <div>
+                    <div class="author-name">Rachel Connors</div>
+                    <div class="author-title">HOA Landscape Manager · Scottsdale, AZ</div>
+                </div>
             </div>
         </div>
     </div>
@@ -171,11 +244,11 @@
 <!-- CTA -->
 <div class="callout-band">
     <div class="container">
-        <h2>Start Your Landscape Irrigation Project</h2>
-        <p>Get a customized system design and quote from a DripSmart Certified Landscape Installer near you.</p>
+        <h2>Ready to Stop Paying for Water That Hits the Pavement?</h2>
+        <p>A DripSmart certified landscape installer will assess your site, design your system, and handle everything from installation to smart controller setup.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-            <a href="/contact" class="btn-white">Request a Free Design</a>
-            <a href="/find-a-dealer" class="btn-outline-white">Find an Installer</a>
+            <a href="/contact" class="btn-white">Request a Free Assessment</a>
+            <a href="/find-a-dealer" class="btn-outline-white">Find a Local Installer</a>
         </div>
     </div>
 </div>

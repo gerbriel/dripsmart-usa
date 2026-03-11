@@ -1,140 +1,198 @@
 @{
-    ViewBag.Title = "Mining Irrigation & Dust Control – Drip Smart USA";
-    ViewBag.MetaDescription = "Precision irrigation and dust suppression systems for mining operations, tailings ponds, and haul roads. Reduce dust, control erosion, and meet regulatory requirements.";
+    ViewBag.Title = "Mining & Extraction Water Management – Drip Smart USA";
+    ViewBag.MetaDescription = "Dust permit violations, heap leach inefficiency, and remote site water waste are costing your operation. Precision drip systems built for the hardest conditions in mining.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- Hero -->
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero" style="position:relative;background: linear-gradient(135deg, #0e1438 0%, #181F4E 100%);">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
-            <div class="breadcrumb"><a href="/">Home</a> › <a href="/industries">Industries</a> › <span>Mining</span></div>
+            <div class="breadcrumb"><a href="/">Home</a> › <span>Mining</span></div>
             <div class="page-hero-text">
                 <span class="section-eyebrow">Mining</span>
-                <h1>Water Management<br>for Tough Conditions.</h1>
-                <p>Mining operations face unique water challenges — dust control on haul roads, tailings pond management, reclamation revegetation, and acid mine drainage. DripSmart engineers systems that work as hard as you do.</p>
+                <h1>Mining Eats Equipment.<br>Our Systems Are Built for It.</h1>
+                <p>From heap leach pads to haul roads, mining operations demand water management systems that hold up under chemical exposure, extreme pressure, and remote conditions. We build those systems — and we back them with field-proven performance.</p>
                 <div class="hero-actions">
-                    <a href="/contact" class="btn-primary btn-lg">Talk to an Engineer</a>
-                    <a href="/resources" class="btn-ghost">View Solutions Brief</a>
+                    <a href="/contact" class="btn-primary btn-lg">Schedule a Site Assessment</a>
+                    <a href="/resources" class="btn-ghost">Download Mining Brief</a>
                 </div>
             </div>
         </div>
         <div class="crop-hero-stats">
-            <div class="crop-stat"><span class="crop-stat-num">70%</span><span class="crop-stat-label">Dust Reduction</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">24/7</span><span class="crop-stat-label">Automated Operation</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">100+</span><span class="crop-stat-label">Mining Site Installs</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">MSHA</span><span class="crop-stat-label">Compliant Products</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">70%</span><span class="crop-stat-label">Dust Reduction on Haul Roads</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">50%</span><span class="crop-stat-label">Less Water Than Water Trucks</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">100+</span><span class="crop-stat-label">Mine Sites Served</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">MSHA</span><span class="crop-stat-label">Compliance Documentation</span></div>
         </div>
     </div>
 </section>
 
-<!-- Solutions -->
+<!-- Pain Points -->
 <section class="section bg-cream">
     <div class="container">
         <div class="section-header centered">
-            <span class="section-eyebrow">Solutions</span>
-            <h2>Mining Water Management Solutions</h2>
+            <span class="section-eyebrow">The Problems Our Clients Face</span>
+            <h2>Water Challenges That Shut Down Operations and Kill Margins</h2>
+            <p>In mining, water problems aren't just operational headaches — they're permit violations, environmental liabilities, and lost recovery that directly hit the bottom line. Here's what we hear every day.</p>
         </div>
         <div class="three-col-grid">
-            <div class="info-card">
-                <div class="info-card-icon">🛣️</div>
-                <h3>Haul Road Dust Suppression</h3>
-                <p>Automated drip and spray systems keep unpaved haul roads within permit limits. Sensors trigger watering only when dust potential is high, minimizing water waste.</p>
-                <ul class="check-list">
-                    <li>PM10/PM2.5 sensor integration</li>
-                    <li>Automated weather-based controls</li>
-                    <li>Tanker fill station connectivity</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">💨</div>
+                <h3>Dust Permit Violations and PM Exceedances</h3>
+                <p>PM10 and PM2.5 exceedances on haul roads trigger regulatory citations, temporary shutdowns, and public complaints — especially near communities. Water trucks can't keep up with 24/7 traffic loads, and they're expensive to operate and maintain.</p>
+                <div class="pain-solution">✓ Automated haul road drip systems apply the right amount of water continuously — without operators, without trucks, and without missed shifts.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">🌱</div>
-                <h3>Mine Reclamation &amp; Revegetation</h3>
-                <p>Establish vegetation on reclaimed mine land using drip irrigation systems designed for slopes, poor soils, and harsh conditions. Increase revegetation success rates dramatically.</p>
-                <ul class="check-list">
-                    <li>Slope-compatible dripline installation</li>
-                    <li>Erosion blanket integration</li>
-                    <li>Native seed germination programs</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">⛏️</div>
+                <h3>Non-Uniform Heap Leach Percolation</h3>
+                <p>Uneven solution application across a heap creates channeling, dry zones, and inconsistent recovery rates. Low-recovery areas represent pure profit left in the ground — and you often don't know where they are until it's too late.</p>
+                <div class="pain-solution">✓ Pressure-compensating drip emitters ensure uniform solution distribution across the entire heap — even on significant slopes — maximizing recovery from every ton of ore.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">🏔️</div>
-                <h3>Tailings Dam Vegetation</h3>
-                <p>Establish plant cover on tailings impoundments to reduce wind erosion, improve visual screening, and satisfy closure plan requirements.</p>
-                <ul class="check-list">
-                    <li>Subsurface and surface drip options</li>
-                    <li>Chemigation for pH adjustment</li>
-                    <li>Works with saline or high-salt water</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">🧪</div>
+                <h3>Chemical Exposure Destroying Irrigation Components</h3>
+                <p>Standard irrigation components don't survive contact with sulfuric acid, cyanide solutions, and process water. Constant emitter replacement and line failures mean unplanned downtime and escalating maintenance costs.</p>
+                <div class="pain-solution">✓ Our mining-grade driplines and emitters are manufactured from chemical-resistant HDPE and tested specifically for heap leach solution exposure. They last — even in acid environments.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">⚗️</div>
-                <h3>Process Water Reuse</h3>
-                <p>Treat and reuse mine process water for irrigation and dust control, reducing freshwater withdrawals and discharge permit compliance challenges.</p>
-                <ul class="check-list">
-                    <li>High-solids tolerant emitters</li>
-                    <li>Disc and screen filtration packages</li>
-                    <li>Flush manifold systems</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">🌱</div>
+                <h3>Reclamation Bonds Requiring Proven Revegetation</h3>
+                <p>Mine closure plans require revegetation that regulators can verify. Establishing native plant cover on reclaimed tailings and waste rock — with poor soil and unpredictable rainfall — is one of the hardest parts of closure compliance.</p>
+                <div class="pain-solution">✓ Automated drip irrigation on reclamation sites delivers exactly the moisture needed for native plant establishment — and generates the monitoring data needed for bond release.</div>
             </div>
-            <div class="info-card">
-                <div class="info-card-icon">💨</div>
-                <h3>Crusher &amp; Transfer Point Dust</h3>
-                <p>Misting bars and fog cannons at crushers, conveyor transfer points, and stockpiles reduce fugitive dust at the source — without saturating material.</p>
-                <ul class="check-list">
-                    <li>Fog nozzle systems</li>
-                    <li>Automated on/off with conveyor belts</li>
-                    <li>Wind speed cutoff sensors</li>
-                </ul>
+            <div class="pain-card">
+                <div class="pain-icon">🚛</div>
+                <h3>Water Truck Costs That Won't Stop Climbing</h3>
+                <p>Diesel, driver hours, maintenance, and truck availability make water truck dust suppression one of the most expensive line items in haul road operations. It's also one of the least controllable — when trucks are in maintenance, dust goes unchecked.</p>
+                <div class="pain-solution">✓ Automated drip dust suppression eliminates truck dependence entirely. The system runs on schedule, 24/7, at a fraction of the operating cost — with no drivers required.</div>
             </div>
-            <div class="highlight-card">
-                <div class="info-card-icon">🔧</div>
-                <h3>Site Engineering &amp; Installation</h3>
-                <p>Our mining irrigation engineers provide complete hydraulic design, equipment selection, and on-site installation support for new mines and expansions.</p>
-                <a href="/contact" class="btn-outline-dark mt-md">Request Engineering Consultation</a>
+            <div class="pain-card">
+                <div class="pain-icon">📡</div>
+                <h3>No Real-Time Visibility at Remote Sites</h3>
+                <p>Mining operations often span miles of remote terrain. A broken line, blocked emitter, or pump failure at a heap leach pad or reclamation site can go unnoticed for days — costing recovery, triggering violations, and escalating repair costs.</p>
+                <div class="pain-solution">✓ DripSphere OS™ connects to SCADA systems and provides real-time alerts for flow anomalies, pressure drops, and system faults — before small problems become expensive ones.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Stats -->
-<section class="section" style="padding:0;">
-    <div class="container">
-        <div class="stat-strip">
-            <div class="stat-strip-item"><span class="stat-strip-num">70%</span><span class="stat-strip-label">Dust Reduction Avg.</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">50%</span><span class="stat-strip-label">Water Savings vs. Truck</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">100+</span><span class="stat-strip-label">Mine Sites Installed</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">24/7</span><span class="stat-strip-label">Automated Operation</span></div>
-        </div>
-    </div>
-</section>
-
-<!-- Two col -->
+<!-- How It Works -->
 <section class="section">
     <div class="container">
         <div class="two-col-layout">
             <div>
-                <span class="section-eyebrow">Why DripSmart for Mining</span>
-                <h2>Built for the Harshest Environments</h2>
-                <p>Standard irrigation equipment fails quickly in mining environments. DripSmart mining products use heavy-duty materials and anti-clog emitter designs that handle high-TSS water, UV exposure, and temperature extremes.</p>
-                <ul class="check-list" style="margin-top:20px;">
-                    <li>Emitters rated for 300 mg/L TSS water</li>
-                    <li>UV-stabilized HDPE components</li>
-                    <li>Operating range: -22°F to 140°F</li>
-                    <li>Anti-clog labyrinth emitter design</li>
-                    <li>All systems include disk filtration</li>
-                    <li>Stainless steel fasteners and fittings available</li>
+                <span class="section-eyebrow">Built for Mining Conditions</span>
+                <h2>Precision Water Management in the Harshest Environments on Earth</h2>
+                <p>Mining operations can't use off-the-shelf irrigation. Slopes, chemical exposure, extreme flow rates, and remote locations all require engineered solutions. We design every system for the specific demands of your site.</p>
+                <p style="margin-top:16px;">On heap leach pads, pressure-compensating emitters ensure every square meter of ore receives the same solution flow rate regardless of slope or row length — maximizing recovery uniformity across the entire pad. On haul roads, automated cycles replace water trucks with a system that never takes a day off.</p>
+                <ul class="check-list" style="margin-top:24px;">
+                    <li>Chemical-resistant HDPE tubing and emitter bodies</li>
+                    <li>Pressure-compensating emitters on slopes up to 60%</li>
+                    <li>Self-flushing emitter design resists particle clogging</li>
+                    <li>SCADA integration for remote monitoring and control</li>
+                    <li>Flow metering at zone and header levels</li>
+                    <li>Complete engineering documentation for permitting and closure</li>
                 </ul>
-                <a href="/contact" class="btn-primary mt-lg">Get a Site Assessment</a>
+                <a href="/contact" class="btn-primary mt-lg">Talk to a Mining Specialist</a>
             </div>
-            <div>
-                <div class="info-card" style="margin-bottom:16px;">
-                    <div class="info-card-icon">📊</div>
-                    <h3>Remote SCADA Integration</h3>
-                    <p>Our mining control systems integrate with existing plant SCADA platforms via Modbus, PROFIBUS, or Ethernet/IP — no new infrastructure required.</p>
+            <div class="stat-feature-card">
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">⚗️</div>
+                    <div>
+                        <div class="stat-feature-num">Acid-Proof</div>
+                        <div class="stat-feature-label">HDPE components rated for sulfuric acid and cyanide solution exposure</div>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <div class="info-card-icon">🛠️</div>
-                    <h3>Field Service &amp; Maintenance</h3>
-                    <p>Dedicated mining field service technicians available for maintenance contracts, seasonal startups, and emergency repairs at operating mines nationwide.</p>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">📐</div>
+                    <div>
+                        <div class="stat-feature-num">60%</div>
+                        <div class="stat-feature-label">Maximum slope where pressure-compensating emitters maintain uniformity</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">💧</div>
+                    <div>
+                        <div class="stat-feature-num">50%</div>
+                        <div class="stat-feature-label">Average reduction in water use vs. conventional sprinkler or truck-based dust suppression</div>
+                    </div>
+                </div>
+                <div class="stat-feature-row">
+                    <div class="stat-feature-icon">📡</div>
+                    <div>
+                        <div class="stat-feature-num">SCADA</div>
+                        <div class="stat-feature-label">Native integration for full remote monitoring and automated reporting</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Applications -->
+<section class="section bg-cream">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">Applications</span>
+            <h2>Wherever Water Management Matters on Your Site</h2>
+        </div>
+        <div class="three-col-grid">
+            <div class="info-card">
+                <div class="info-card-icon">⛏️</div>
+                <h3>Heap Leach Operations</h3>
+                <p>Maximize mineral recovery with uniform solution distribution across the full heap. Pressure-compensating emitters maintain equal flow rates at every point — regardless of slope, row length, or pressure variation — so no ore goes under-leached.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🛣️</div>
+                <h3>Haul Road Dust Suppression</h3>
+                <p>Automated drip lines along haul road edges apply moisture on schedule and on-demand — eliminating PM exceedances without water trucks. The system runs 24/7 without operators and uses a fraction of the water that trucks waste through evaporation and overlap.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🌿</div>
+                <h3>Mine Reclamation &amp; Revegetation</h3>
+                <p>Native plant establishment on reclaimed waste rock, tailings, and pit slopes requires consistent, gentle moisture — not flood or overhead sprinkler cycles. Drip irrigation establishes cover faster and generates the documentation data needed for bond release.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🏔️</div>
+                <h3>Tailings Dam Vegetation</h3>
+                <p>Stabilizing tailings facilities requires established root systems that prevent erosion and satisfy regulatory inspections. Our systems establish and maintain that cover with minimal water use and zero surface disturbance from equipment access.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">♻️</div>
+                <h3>Process Water Reuse</h3>
+                <p>Mine process water and treated effluent can replace fresh water sources for dust suppression and revegetation — reducing freshwater withdrawal and turning a disposal problem into a useful resource.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🏗️</div>
+                <h3>Crusher &amp; Transfer Point Dust</h3>
+                <p>Crusher feed, transfer points, and stockpile areas generate point-source dust that's hard to control without fogging or misting. Precision micro-drip systems apply moisture exactly where needed without waterlogging stockpiles or affecting material handling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photo Banner -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1600&q=80" alt="Aerial view of mining operation and terrain" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.72) 0%, rgba(14,20,56,0.15) 60%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:520px;color:white;">
+                <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#89C1FF;margin-bottom:10px;">Built for the Harshest Conditions</div>
+                <div style="font-size:1.85rem;font-weight:800;line-height:1.2;margin-bottom:14px;">Chemical-resistant. Pressure-compensating.<br>Remote-monitored. Proven.</div>
+                <a href="/contact" class="btn-primary">Schedule a Site Assessment</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial --> on our primary haul road. We tried every water truck schedule you can imagine. After installing the DripSmart system, we haven't had a PM10 exceedance in two years. The operating cost is about a quarter of what we were spending on trucks."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">DM</div>
+                <div>
+                    <div class="author-name">Dave Moreno</div>
+                    <div class="author-title">Site Operations Manager, Copper Basin Mine — Arizona</div>
                 </div>
             </div>
         </div>
@@ -144,8 +202,8 @@
 <!-- CTA -->
 <div class="callout-band">
     <div class="container">
-        <h2>Solve Your Mining Water Challenge</h2>
-        <p>Talk to a DripSmart mining irrigation engineer and get a custom solution for your operation.</p>
+        <h2>Ready to Solve Your Site's Water Challenge?</h2>
+        <p>Whether it's dust compliance, heap leach optimization, or reclamation bond requirements — our mining engineers have seen it before and know how to fix it.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
             <a href="/contact" class="btn-white">Schedule a Site Assessment</a>
             <a href="/resources" class="btn-outline-white">Download Mining Brief</a>

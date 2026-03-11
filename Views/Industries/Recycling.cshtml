@@ -1,108 +1,205 @@
 @{
-    ViewBag.Title = "Recycling & Composting Irrigation – Drip Smart USA";
-    ViewBag.MetaDescription = "Leachate irrigation and dust suppression for composting facilities, landfills, and waste-to-energy operations. Safe, compliant, and automated.";
+    ViewBag.Title = "Recycling & Composting Facility Water Management – Drip Smart USA";
+    ViewBag.MetaDescription = "Leachate discharge fines, landfill cover compliance, and plastic dripline disposal costs are solvable problems. DripSmart serves recycling and composting facilities — and takes your old drip tape back.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- Hero -->
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero" style="position:relative;background: linear-gradient(135deg, #0e1438 0%, #181F4E 100%);">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
-            <div class="breadcrumb"><a href="/">Home</a> › <a href="/industries">Industries</a> › <span>Recycling</span></div>
+            <div class="breadcrumb"><a href="/">Home</a> › <span>Recycling</span></div>
             <div class="page-hero-text">
                 <span class="section-eyebrow">Recycling &amp; Composting</span>
-                <h1>Close the Loop on<br>Facility Water Use.</h1>
-                <p>Composting, recycling, and waste management facilities generate leachate, produce compost that needs curing, and create dust. DripSmart turns all three into managed, compliant processes.</p>
+                <h1>Close the Loop. On Plastic<br>Waste and Facility Water.</h1>
+                <p>From leachate disposal to compost moisture control to dripline take-back, DripSmart helps recycling and composting facilities eliminate two of their biggest pain points — uncontrolled water and mounting plastic waste — at the same time.</p>
                 <div class="hero-actions">
-                    <a href="/contact" class="btn-primary btn-lg">Talk to a Specialist</a>
-                    <a href="/resources" class="btn-ghost">Download Brochure</a>
+                    <a href="/contact" class="btn-primary btn-lg">Get a Facility Assessment</a>
+                    <a href="/contact" class="btn-ghost">Learn About ReGen™ Recycling</a>
                 </div>
             </div>
         </div>
         <div class="crop-hero-stats">
-            <div class="crop-stat"><span class="crop-stat-num">100%</span><span class="crop-stat-label">Leachate Reuse Possible</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">60%</span><span class="crop-stat-label">Faster Compost Curing</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">Zero</span><span class="crop-stat-label">Discharge to Storm Sewer</span></div>
-            <div class="crop-stat"><span class="crop-stat-num">EPA</span><span class="crop-stat-label">40 CFR Part 503 Support</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">100%</span><span class="crop-stat-label">Leachate Reuse — Zero Discharge</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">60%</span><span class="crop-stat-label">Faster Compost Curing Cycles</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">Zero</span><span class="crop-stat-label">Landfill Discharge Violations</span></div>
+            <div class="crop-stat"><span class="crop-stat-num">ReGen™</span><span class="crop-stat-label">Closed-Loop Dripline Recycling</span></div>
         </div>
     </div>
 </section>
 
-<!-- Solutions -->
+<!-- Pain Points -->
 <section class="section bg-cream">
     <div class="container">
         <div class="section-header centered">
-            <span class="section-eyebrow">Solutions</span>
-            <h2>Irrigation Solutions for the Recycling Industry</h2>
+            <span class="section-eyebrow">The Problems Our Clients Face</span>
+            <h2>The Hidden Costs of Running a Facility That Handles Waste</h2>
+            <p>Recycling and composting facilities are in the business of reducing waste — but they're often drowning in their own compliance and disposal challenges. Here's what we hear from operators every day.</p>
+        </div>
+        <div class="three-col-grid">
+            <div class="pain-card">
+                <div class="pain-icon">🚿</div>
+                <h3>Leachate Discharge Fines and Storm Sewer Violations</h3>
+                <p>Landfill leachate is one of the most tightly regulated discharges in solid waste management. Surface runoff violations and storm sewer discharge events trigger fines, public scrutiny, and regulatory oversight that escalates quickly.</p>
+                <div class="pain-solution">✓ Sub-surface drip irrigation disposes of leachate beneficially through soil treatment — eliminating discharge pathways and turning a compliance problem into a managed land application program.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🏗️</div>
+                <h3>Post-Closure Cover Compliance Without Water Access</h3>
+                <p>Closed landfill cells require vegetated cover that meets regulatory performance standards — but post-closure sites rarely have reliable water sources or maintenance crews willing to hand-water cover crops across acres of capped cells.</p>
+                <div class="pain-solution">✓ Automated drip irrigation establishes and maintains landfill cap vegetation without staff involvement, and generates the monitoring data regulators require for post-closure certification.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🌡️</div>
+                <h3>Compost Quality Inconsistency from Moisture Variability</h3>
+                <p>Compost quality — and cycle time — is directly tied to moisture control. Too dry and decomposition stalls. Too wet and you create anaerobic conditions, odor, and leachate. Windrow moisture management by hand or with sprinklers is imprecise and labor-intensive.</p>
+                <div class="pain-solution">✓ Precision drip irrigation applies the exact moisture volume needed at each windrow — shortening cycles, improving finished compost quality, and reducing the labor cost of manual moisture management.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">💨</div>
+                <h3>Facility Dust Violations and Air Permit Exceedances</h3>
+                <p>Tipping floors, processing areas, and outdoor stockpiles at recycling facilities generate dust that triggers air quality violations. Water trucks are too imprecise and too expensive to operate continuously throughout the day.</p>
+                <div class="pain-solution">✓ Automated micro-drip dust suppression applies moisture on schedule at problem areas — without trucks, without operators, and without over-wetting materials that need to stay dry.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🗑️</div>
+                <h3>No Compliant Path for Used Drip Tape Disposal</h3>
+                <p>At the end of the season, growers and operators are left with hundreds of pounds of used dripline. Burning it is illegal. Landfilling it is expensive. Most of it ends up in the wrong place — and that's becoming a liability as plastic waste regulations tighten.</p>
+                <div class="pain-solution">✓ ReGen™ closes the loop — used DripSmart dripline is collected, shredded, washed, pelletized, and turned into new driplines. No landfill. No burning. No compliance exposure.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🌊</div>
+                <h3>Buffer Zone and Perimeter Management</h3>
+                <p>Facilities near residential areas face community scrutiny over odor, runoff, and visual impact. Buffer zones that aren't properly vegetated and maintained become a recurring source of neighbor complaints and regulatory notices.</p>
+                <div class="pain-solution">✓ Automated drip irrigation on buffer strips and perimeter zones establishes dense vegetative cover without manual labor — improving facility appearance and reducing runoff pathways simultaneously.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ReGen Section -->
+<section class="section" style="background: linear-gradient(135deg, #0e1438 0%, #181F4E 100%); color:white;">
+    <div class="container">
+        <div class="two-col-layout" style="align-items:center;">
+            <div>
+                <span class="section-eyebrow" style="color:#FFBC03;">ReGen™ Closed-Loop Dripline Program</span>
+                <h2 style="color:white;">Your Old Drip Tape Becomes New Drip Tape. That's It.</h2>
+                <p style="color:rgba(255,255,255,0.85);">The ReGen™ program is the first closed-loop take-back system for agricultural and irrigation dripline in the United States. Used DripSmart drip tape is collected from the field, processed through our certified recycling stream, and turned back into new dripline — eliminating the disposal problem entirely.</p>
+                <p style="margin-top:16px;color:rgba(255,255,255,0.85);">The program launched in California with $2M in CalRecycle funding and is expanding nationally. It addresses one of the fastest-growing plastic waste challenges in agriculture and irrigation — and gives growers and operators a documented, auditable disposal pathway that holds up to regulatory review.</p>
+                <ul class="check-list" style="margin-top:24px;--check-color:#FFBC03;">
+                    <li>Free collection program for enrolled customers</li>
+                    <li>Chain-of-custody documentation for sustainability reporting</li>
+                    <li>Closed loop: used tape → pelletized LDPE → new dripline</li>
+                    <li>CalRecycle certified (expanding to additional states)</li>
+                    <li>Available to farms, nurseries, golf, and municipalities</li>
+                </ul>
+                <a href="/contact" class="btn-primary mt-lg" style="background:#FFBC03;color:#181F4E;border-color:#FFBC03;">Learn About ReGen™ Enrollment</a>
+            </div>
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:36px;">
+                <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;color:#FFBC03;text-transform:uppercase;margin-bottom:24px;">ReGen™ Recycling Loop</div>
+                <div style="display:flex;flex-direction:column;gap:16px;">
+                    <div style="display:flex;align-items:center;gap:16px;">
+                        <div style="width:40px;height:40px;border-radius:50%;background:#FFBC03;display:flex;align-items:center;justify-content:center;font-weight:800;color:#181F4E;flex-shrink:0;">1</div>
+                        <div>
+                            <div style="font-weight:700;color:white;">Collection</div>
+                            <div style="font-size:0.875rem;color:rgba(255,255,255,0.65);">Used dripline picked up from your site at no cost</div>
+                        </div>
+                    </div>
+                    <div style="margin-left:20px;width:1px;height:16px;background:rgba(255,255,255,0.15);"></div>
+                    <div style="display:flex;align-items:center;gap:16px;">
+                        <div style="width:40px;height:40px;border-radius:50%;background:#FFBC03;display:flex;align-items:center;justify-content:center;font-weight:800;color:#181F4E;flex-shrink:0;">2</div>
+                        <div>
+                            <div style="font-weight:700;color:white;">Processing</div>
+                            <div style="font-size:0.875rem;color:rgba(255,255,255,0.65);">Shredded, washed, and pelletized at certified facility</div>
+                        </div>
+                    </div>
+                    <div style="margin-left:20px;width:1px;height:16px;background:rgba(255,255,255,0.15);"></div>
+                    <div style="display:flex;align-items:center;gap:16px;">
+                        <div style="width:40px;height:40px;border-radius:50%;background:#FFBC03;display:flex;align-items:center;justify-content:center;font-weight:800;color:#181F4E;flex-shrink:0;">3</div>
+                        <div>
+                            <div style="font-weight:700;color:white;">Manufacturing</div>
+                            <div style="font-size:0.875rem;color:rgba(255,255,255,0.65);">Pelletized LDPE incorporated into new dripline production</div>
+                        </div>
+                    </div>
+                    <div style="margin-left:20px;width:1px;height:16px;background:rgba(255,255,255,0.15);"></div>
+                    <div style="display:flex;align-items:center;gap:16px;">
+                        <div style="width:40px;height:40px;border-radius:50%;background:#FFBC03;display:flex;align-items:center;justify-content:center;font-weight:800;color:#181F4E;flex-shrink:0;">4</div>
+                        <div>
+                            <div style="font-weight:700;color:white;">Back to the Field</div>
+                            <div style="font-size:0.875rem;color:rgba(255,255,255,0.65);">New dripline shipped — the loop is closed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Applications -->
+<section class="section bg-cream">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-eyebrow">Applications</span>
+            <h2>Where We Work on Recycling &amp; Composting Facilities</h2>
         </div>
         <div class="three-col-grid">
             <div class="info-card">
-                <div class="info-card-icon">♻️</div>
+                <div class="info-card-icon">💧</div>
                 <h3>Leachate Land Application</h3>
-                <p>Sub-surface drip application of landfill or compost leachate on buffer land eliminates discharge to storm sewers and surface water — turning a liability into a resource.</p>
-                <ul class="check-list">
-                    <li>NSF 245 certified driplines</li>
-                    <li>High-nitrogen leachate compatible</li>
-                    <li>Automated loading rate controls</li>
-                </ul>
+                <p>Nutrient-rich landfill leachate can be applied to adjacent agricultural land, buffer zones, or other vegetated areas through sub-surface drip — eliminating discharge and turning a disposal cost into a beneficial application program with full regulatory documentation.</p>
             </div>
             <div class="info-card">
-                <div class="info-card-icon">🌡️</div>
+                <div class="info-card-icon">🌿</div>
                 <h3>Compost Windrow Moisture Control</h3>
-                <p>Maintain optimal moisture (50–60% by weight) in compost windrows using overhead sprinklers or dripline tubes placed between rows — accelerating decomposition and quality.</p>
-                <ul class="check-list">
-                    <li>Overhead and inline moisture delivery</li>
-                    <li>Moisture sensor integration</li>
-                    <li>Automated based on turning schedules</li>
-                </ul>
+                <p>Consistent, measurable moisture is the single biggest controllable variable in compost quality and cycle time. Precision drip irrigation on windrows shortens curing time, improves finished product uniformity, and reduces hand watering labor by 80%+.</p>
             </div>
             <div class="info-card">
                 <div class="info-card-icon">💨</div>
                 <h3>Facility Dust Suppression</h3>
-                <p>Tipping floor, sorting lines, and conveyor transfer points generate particulate dust. Our misting systems suppress dust at the source with minimal water.</p>
-                <ul class="check-list">
-                    <li>Fog nozzle misting bars</li>
-                    <li>Recirculating water option</li>
-                    <li>Belt-triggered automatic operation</li>
-                </ul>
+                <p>Tipping floors, processing areas, and outdoor material stockpiles require continuous moisture management to stay inside air permit limits. Automated micro-drip systems apply moisture on schedule without equipment or operator involvement.</p>
             </div>
             <div class="info-card">
-                <div class="info-card-icon">🌿</div>
-                <h3>Buffer Zone Revegetation</h3>
-                <p>Establish and maintain vegetative buffers and screen plantings around facilities using drip irrigation systems — improving community relations and permit compliance.</p>
-                <ul class="check-list">
-                    <li>Dripline and drip tape options</li>
-                    <li>Leachate reuse compatible</li>
-                    <li>Low-maintenance automated systems</li>
-                </ul>
+                <div class="info-card-icon">🌱</div>
+                <h3>Landfill Cap &amp; Post-Closure Vegetation</h3>
+                <p>Establishing and maintaining vegetative cover on closed landfill cells is a long-term compliance obligation that most facilities manage manually. Automated drip systems eliminate that labor dependency and provide the performance documentation regulators require.</p>
             </div>
             <div class="info-card">
-                <div class="info-card-icon">🏗️</div>
-                <h3>Landfill Cap Vegetation</h3>
-                <p>Maintain vegetation on closed landfill caps to control erosion, manage cap moisture, and satisfy post-closure care requirements.</p>
-                <ul class="check-list">
-                    <li>Lightweight installation over cap liner</li>
-                    <li>Shallow-depth installation options</li>
-                    <li>Freeze-resistant components available</li>
-                </ul>
+                <div class="info-card-icon">🌳</div>
+                <h3>Buffer Zone &amp; Perimeter Revegetation</h3>
+                <p>Buffer zones between facilities and neighboring properties need dense, maintained vegetation to intercept runoff, reduce windblown debris, and manage community relations. Automated drip irrigation establishes that cover faster and keeps it alive without manual intervention.</p>
             </div>
-            <div class="highlight-card">
-                <div class="info-card-icon">📋</div>
-                <h3>Regulatory Compliance Package</h3>
-                <p>We provide complete documentation for 40 CFR 503, state solid waste permits, and air quality compliance — including engineering calculations and monitoring reports.</p>
-                <a href="/contact" class="btn-outline-dark mt-md">Request Compliance Consultation</a>
+            <div class="info-card">
+                <div class="info-card-icon">♻️</div>
+                <h3>ReGen™ Dripline Take-Back</h3>
+                <p>The ReGen™ program gives farms, municipalities, nurseries, and irrigation contractors a compliant, documented option for used drip tape disposal. No landfill fees. No burning liability. Chain-of-custody documentation included for ESG reporting and sustainability programs.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Stats -->
-<section class="section" style="padding:0;">
-    <div class="container">
-        <div class="stat-strip">
-            <div class="stat-strip-item"><span class="stat-strip-num">Zero</span><span class="stat-strip-label">Stormwater Discharge</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">60%</span><span class="stat-strip-label">Faster Compost Curing</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">100%</span><span class="stat-strip-label">Leachate Reuse Rate</span></div>
-            <div class="stat-strip-item"><span class="stat-strip-num">50+</span><span class="stat-strip-label">Facilities Installed</span></div>
+<!-- Photo Banner -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1542601906897-d3f6e05aae8d?auto=format&fit=crop&w=1600&q=80" alt="Composting and green recycling facility" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.72) 0%, rgba(14,20,56,0.15) 60%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:520px;color:white;">
+                <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#FFBC03;margin-bottom:10px;">ReGen™ Closed-Loop Program</div>
+                <div style="font-size:1.85rem;font-weight:800;line-height:1.2;margin-bottom:14px;">Your old drip tape doesn't<br>have to end up in a landfill.</div>
+                <a href="/contact" class="btn-primary">Learn About ReGen™</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial --> It was costing us over $80,000 a year and creating compliance risk every time a truck left the gate. The DripSmart drip irrigation system pays for itself in under 18 months — and we haven't had a single discharge violation since."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">KW</div>
+                <div>
+                    <div class="author-name">Ken Wakefield</div>
+                    <div class="author-title">Environmental Compliance Manager, Valley Landfill — Central California</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -110,11 +207,11 @@
 <!-- CTA -->
 <div class="callout-band">
     <div class="container">
-        <h2>Manage Facility Water the Smart Way</h2>
-        <p>From leachate to compost moisture to dust — one integrated system, designed for your facility's exact needs.</p>
+        <h2>Facility Water Challenge. Plastic Waste Problem. We Solve Both.</h2>
+        <p>Tell us what you're managing. We'll put together a solution that addresses your compliance obligations, reduces operating costs, and closes the loop on plastic waste.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
             <a href="/contact" class="btn-white">Get a Facility Assessment</a>
-            <a href="/resources" class="btn-outline-white">Download Solutions Brief</a>
+            <a href="/contact" class="btn-outline-white">Learn About ReGen™</a>
         </div>
     </div>
 </div>
