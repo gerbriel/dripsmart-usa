@@ -79,7 +79,7 @@ dotnet build
 | Precision Irrigation | `/agriculture/precision-irrigation` | Science & benefits |
 | Grower Stories | `/growers-stories` | Case studies & testimonials |
 | Find a Dealer | `/find-a-dealer` | Dealer locator with search |
-| Digital Farming | `/digital-farming` | GrowSphere™ OS platform |
+| Digital Farming | `/digital-farming` | DripSphere OS™ platform |
 | Resources | `/resources` | Downloads, tools, academy |
 | Contact | `/contact` | Quote request form |
 

@@ -87,4 +87,37 @@ public class HomeController : Controller
 
     [Route("/agriculture/crops/peanuts")]
     public IActionResult CropPeanuts() => View("~/Views/Agriculture/Crops/Peanuts.cshtml");
+
+    // Agriculture sub-pages
+    [Route("/agriculture/drip-irrigation")]
+    public IActionResult DripIrrigation() => View("~/Views/Agriculture/DripIrrigation.cshtml");
+
+    [Route("/agriculture/sustainable")]
+    public IActionResult Sustainable() => View("~/Views/Agriculture/Sustainable.cshtml");
+
+    // Products
+    [Route("/products")]
+    public IActionResult Products() => View("~/Views/Products/Index.cshtml");
+
+    [Route("/products/driplines")]
+    public IActionResult ProductDriplines() => View("~/Views/Products/Driplines.cshtml");
+
+    [Route("/products/sprinklers")]
+    public IActionResult ProductSprinklers() => View("~/Views/Products/Sprinklers.cshtml");
+
+    [Route("/products/filters")]
+    public IActionResult ProductFilters() => View("~/Views/Products/Filters.cshtml");
+
+    [Route("/products/drippers")]
+    public IActionResult ProductDrippers() => View("~/Views/Products/Drippers.cshtml");
+
+    [Route("/products/connectors")]
+    public IActionResult ProductConnectors() => View("~/Views/Products/Connectors.cshtml");
+
+    // Digital Farming sub-pages
+    [Route("/digital-farming/dripsphere-os")]
+    public IActionResult DripSphereOS() => View("~/Views/DigitalFarming/DripSphereOS.cshtml");
+
+    [Route("/digital-farming/fertigation")]
+    public IActionResult Fertigation() => View("~/Views/DigitalFarming/Fertigation.cshtml");
 }
