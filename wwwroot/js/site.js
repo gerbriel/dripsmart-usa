@@ -13,53 +13,137 @@
         }, { passive: true });
     }
 
-    // --- Mobile nav toggle ---
+    // ============================================================
+    // NAV — Unified desktop hover-intent + mobile accordion
+    // ============================================================
     const toggle = document.getElementById('mobileNavToggle');
-    const nav = document.getElementById('mainNav');
+    const nav    = document.getElementById('mainNav');
+    const MOBILE_BP = 960;
 
-    if (toggle && nav) {
-        toggle.addEventListener('click', function () {
-            const isOpen = nav.classList.toggle('open');
-            toggle.classList.toggle('open', isOpen);
-            toggle.setAttribute('aria-expanded', isOpen);
-            document.body.style.overflow = isOpen ? 'hidden' : '';
-        });
-
-        // Close on outside click
-        document.addEventListener('click', function (e) {
-            if (!header.contains(e.target) && nav.classList.contains('open')) {
-                nav.classList.remove('open');
-                toggle.classList.remove('open');
-                toggle.setAttribute('aria-expanded', false);
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Tappable dropdowns on mobile
-        document.querySelectorAll('.has-dropdown > a').forEach(function (link) {
-            link.addEventListener('click', function (e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    const parent = link.closest('.has-dropdown');
-                    parent.classList.toggle('open');
-                }
-            });
+    // Close all dropdowns
+    function closeAll() {
+        document.querySelectorAll('.has-dropdown.is-open').forEach(function (li) {
+            li.classList.remove('is-open');
         });
     }
 
-    // --- Animate stats on scroll (Intersection Observer) ---
+    // Open mobile nav
+    function openMobileNav() {
+        nav.classList.add('open');
+        toggle.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Close mobile nav
+    function closeMobileNav() {
+        nav.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        closeAll();
+    }
+
+    if (toggle && nav) {
+        // Hamburger toggle
+        toggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            nav.classList.contains('open') ? closeMobileNav() : openMobileNav();
+        });
+
+        // Close mobile nav on outside click
+        document.addEventListener('click', function (e) {
+            if (nav.classList.contains('open') && !header.contains(e.target)) {
+                closeMobileNav();
+            }
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeMobileNav();
+                closeAll();
+            }
+        });
+    }
+
+    // ---- Desktop: hover-intent with leave delay ----
+    var hoverTimers = {};
+
+    document.querySelectorAll('.has-dropdown').forEach(function (li, idx) {
+        var link = li.querySelector(':scope > a');
+
+        // Desktop hover open
+        li.addEventListener('mouseenter', function () {
+            if (window.innerWidth <= MOBILE_BP) return;
+            clearTimeout(hoverTimers[idx]);
+            closeAll();
+            li.classList.add('is-open');
+        });
+
+        // Desktop hover close — small delay so mouse can travel to dropdown
+        li.addEventListener('mouseleave', function () {
+            if (window.innerWidth <= MOBILE_BP) return;
+            hoverTimers[idx] = setTimeout(function () {
+                li.classList.remove('is-open');
+            }, 120);
+        });
+
+        // Mobile: tap nav link to toggle accordion, don't navigate
+        if (link) {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth > MOBILE_BP) return; // desktop: let href work
+                e.preventDefault();
+                var isOpen = li.classList.contains('is-open');
+                closeAll();
+                if (!isOpen) li.classList.add('is-open');
+            });
+        }
+    });
+
+    // Close desktop dropdowns when clicking links inside them
+    document.querySelectorAll('.dropdown a').forEach(function (a) {
+        a.addEventListener('click', function () {
+            closeAll();
+            closeMobileNav();
+        });
+    });
+
+    // Close dropdown when tabbing away (accessibility)
+    document.querySelectorAll('.has-dropdown').forEach(function (li) {
+        li.addEventListener('focusout', function (e) {
+            if (window.innerWidth <= MOBILE_BP) return;
+            setTimeout(function () {
+                if (!li.contains(document.activeElement)) {
+                    li.classList.remove('is-open');
+                }
+            }, 50);
+        });
+    });
+
+    // ---- Inject mobile CTA row into nav ----
+    if (nav) {
+        var ctaRow = document.createElement('div');
+        ctaRow.className = 'mobile-cta-row';
+        ctaRow.innerHTML =
+            '<a href="/find-a-dealer" class="btn-outline">Find a Dealer</a>' +
+            '<a href="/contact" class="btn-primary">Get a Quote</a>';
+        nav.appendChild(ctaRow);
+    }
+
+    // ============================================================
+    // Animate stats on scroll (Intersection Observer)
+    // ============================================================
     function animateCounter(el, target, duration) {
         const start = performance.now();
-        const isPercent = el.dataset.suffix || '';
         const from = 0;
 
         function update(time) {
             const elapsed = time - start;
             const progress = Math.min(elapsed / duration, 1);
-            // ease-out cubic
             const eased = 1 - Math.pow(1 - progress, 3);
             const current = Math.round(from + (target - from) * eased);
-            el.textContent = current + isPercent;
+            el.textContent = current + (el.dataset.suffix || '');
             if (progress < 1) requestAnimationFrame(update);
         }
         requestAnimationFrame(update);
@@ -87,7 +171,9 @@
         statEls.forEach(function (el) { observer.observe(el); });
     }
 
-    // --- Fade-in on scroll ---
+    // ============================================================
+    // Fade-in on scroll
+    // ============================================================
     const fadeEls = document.querySelectorAll(
         '.industry-card, .step-card, .story-card, .testimonial-card, .crop-card, .resource-card, .benefit-item'
     );
@@ -102,10 +188,9 @@
         const fadeObserver = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
-                    const el = entry.target;
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                    fadeObserver.unobserve(el);
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    fadeObserver.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
@@ -113,7 +198,9 @@
         fadeEls.forEach(function (el) { fadeObserver.observe(el); });
     }
 
-    // --- Sticky progress fill animation (hero) ---
+    // ============================================================
+    // Hero progress bar animation
+    // ============================================================
     const progressFill = document.querySelector('.progress-fill');
     if (progressFill) {
         progressFill.style.width = '0%';
@@ -124,3 +211,4 @@
     }
 
 })();
+
