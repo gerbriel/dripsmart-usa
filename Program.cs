@@ -17,18 +17,25 @@ WebApplication app = builder.Build();
 
 await app.BootUmbracoAsync();
 
+// Standard ASP.NET Core static files and routing — runs BEFORE Umbraco
+app.UseStaticFiles();
+app.UseRouting();
 
+// Map all our MVC controller routes first, before Umbraco gets a chance
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
+// Umbraco backoffice only — website middleware removed so it doesn't catch our routes
 app.UseUmbraco()
     .WithMiddleware(u =>
     {
         u.UseBackOffice();
-        u.UseWebsite();
     })
     .WithEndpoints(u =>
     {
         u.UseBackOfficeEndpoints();
-        u.EndpointRouteBuilder.MapControllers();
-        u.UseWebsiteEndpoints();
     });
 
 await app.RunAsync();
