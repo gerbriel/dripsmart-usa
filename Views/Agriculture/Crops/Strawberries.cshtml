@@ -3,8 +3,9 @@
     ViewBag.MetaDescription = "Drip irrigation for strawberries. Eliminate Botrytis and powdery mildew by keeping foliage dry while delivering precision fertigation for Class 1 fruit quality.";
 }
 
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero bg-midnight section" style="position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
             <div class="breadcrumb"><a href="/">Home</a> › <a href="/agriculture">Agriculture</a> › <a href="/agriculture/crops">Crops</a> › <span>Strawberries</span></div>
             <div class="page-hero-text">
@@ -106,6 +107,20 @@
         </div>
     </div>
 </section>
+
+<!-- PHOTO BAND -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1600&q=80" alt="Strawberry field rows with drip irrigation" style="width:100%;height:100%;object-fit:cover;object-position:center 45%;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.80) 0%, rgba(14,20,56,0.1) 65%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:500px;color:white;">
+                <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#89C1FF;margin-bottom:10px;">Strawberry Performance</div>
+                <div style="font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:14px;">Dry foliage.<br>Class 1 packout every time.</div>
+                <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">Drip keeps leaves and fruit completely dry — cutting Botrytis incidence by 55% and reducing fungicide applications dramatically.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="callout-mustard">
     <div class="container">

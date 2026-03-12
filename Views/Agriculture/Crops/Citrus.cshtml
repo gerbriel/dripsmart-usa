@@ -3,8 +3,9 @@
     ViewBag.MetaDescription = "Micro-drip and subsurface drip irrigation for oranges, lemons, and grapefruit. Precise root-zone hydration improves fruit size and reduces disease pressure.";
 }
 
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero bg-midnight section" style="position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
             <div class="breadcrumb"><a href="/">Home</a> › <a href="/agriculture">Agriculture</a> › <a href="/agriculture/crops">Crops</a> › <span>Citrus</span></div>
             <div class="page-hero-text">
@@ -105,6 +106,20 @@
         </div>
     </div>
 </section>
+
+<!-- PHOTO BAND -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=1600&q=80" alt="Citrus orchard with irrigation" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.80) 0%, rgba(14,20,56,0.1) 65%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:500px;color:white;">
+                <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#89C1FF;margin-bottom:10px;">Citrus Performance</div>
+                <div style="font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:14px;">Bigger fruit.<br>Drier canopy. Less disease.</div>
+                <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">SDI keeps soil around citrus crowns dry, cutting Phytophthora risk by 60% while delivering water precisely to the active root zone.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="callout-band">
     <div class="container">

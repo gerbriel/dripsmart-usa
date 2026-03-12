@@ -3,8 +3,9 @@
     ViewBag.MetaDescription = "Subsurface drip irrigation for peanuts. Precision peg-zone moisture control prevents aflatoxin and maximizes kernel grade while cutting water use 35–50%.";
 }
 
-<section class="page-hero bg-midnight section">
-    <div class="container">
+<section class="page-hero bg-midnight section" style="position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;pointer-events:none;"></div>
+    <div class="container" style="position:relative;">
         <div class="page-hero-inner">
             <div class="breadcrumb"><a href="/">Home</a> › <a href="/agriculture">Agriculture</a> › <a href="/agriculture/crops">Crops</a> › <span>Peanuts</span></div>
             <div class="page-hero-text">
@@ -107,6 +108,20 @@
         </div>
     </div>
 </section>
+
+<!-- PHOTO BAND -->
+<div style="width:100%;height:360px;overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80" alt="Agricultural field with row crops" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(14,20,56,0.80) 0%, rgba(14,20,56,0.1) 65%);display:flex;align-items:center;">
+        <div class="container">
+            <div style="max-width:500px;color:white;">
+                <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#89C1FF;margin-bottom:10px;">Peanut Performance</div>
+                <div style="font-size:2rem;font-weight:800;line-height:1.25;margin-bottom:14px;">Better grade.<br>Lower disease pressure.</div>
+                <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">Precise soil moisture control during pegging and pod development eliminates the stress cycles that cause aflatoxin and grade loss in peanuts.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="callout-band">
     <div class="container">
