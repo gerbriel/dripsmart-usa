@@ -1,6 +1,6 @@
 # Drip Smart USA — Precision Irrigation Website
 
-A user-focused precision drip irrigation website built on **Umbraco CMS** with **.NET 10**, inspired by [netafimusa.com](https://www.netafimusa.com/) with an enhanced, user-first design.
+A user-focused precision drip irrigation website built on **Umbraco CMS** with **.NET 10**, featuring a modern, conversion-optimized design built for growers, landscapers, and irrigation professionals.
 
 ---
 
