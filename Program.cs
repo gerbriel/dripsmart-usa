@@ -28,8 +28,7 @@ app.UseUmbraco()
     {
         u.UseBackOfficeEndpoints();
         u.UseWebsiteEndpoints();
+        u.EndpointRouteBuilder.MapControllers();
     });
-
-app.MapControllers();
 
 await app.RunAsync();
